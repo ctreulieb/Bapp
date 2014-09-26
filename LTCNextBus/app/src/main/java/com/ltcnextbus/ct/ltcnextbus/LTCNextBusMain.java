@@ -1,17 +1,21 @@
 package com.ltcnextbus.ct.ltcnextbus;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.*;
 import java.util.ArrayList;
+import android.view.View.OnClickListener;
 
 public class LTCNextBusMain extends Activity {
 
 
     private ListView listView;
+    private Button favButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,20 @@ public class LTCNextBusMain extends Activity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
 
         listView.setAdapter(adapter);
+
+        favButton = (Button) findViewById(R.id.button2);
+
+        OnClickListener onClickListener = new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(LTCNextBusMain.this, Favourites.class);
+                startActivity(myIntent);
+            }
+        };
+        favButton.setOnClickListener(onClickListener);
+
+        //Intent myIntent = new Intent(this, AvitivityName.class);
+       // startActivity(myIntent);
     }
 
 
