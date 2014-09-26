@@ -24,7 +24,7 @@ public class LTCNextBusMain extends Activity {
 
         listView = (ListView) findViewById(R.id.listView);
 
-        String[] values = new String[] { "#17 5:50", "#4a 6:00" };
+        String[] values = new String[] { "#17 5:50", "#4a 6:00", "#17 6:20", "#4a 6:30", "#17 6:50", "#4a 7:00", "#17 7:20", "#4a 7:30",  "#17 7:50", "#4a 8:00", };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
 
