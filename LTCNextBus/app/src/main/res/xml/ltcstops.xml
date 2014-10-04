@@ -833,7 +833,10 @@
       <latitude>43.0120546</latitude>
       <longitude>-81.3215378</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="118" name="Aldersbrook &amp; Blackacres NS NB">
     <location>
@@ -930,7 +933,10 @@
       <latitude>43.0143028</latitude>
       <longitude>-81.3214148</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="115" name="Aldersbrook &amp; Ardsley Rd SB">
     <location>
@@ -1381,7 +1387,10 @@
       <latitude>42.9596013</latitude>
       <longitude>-81.2573502</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="186" name="Base Line &amp; Elworthy Ave EB">
     <location>
@@ -1477,7 +1486,10 @@
       <latitude>42.9593315</latitude>
       <longitude>-81.2598281</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="217" name="Base Line &amp; Wortley Rd EB">
     <location>
@@ -1690,7 +1702,10 @@
       <latitude>42.959398</latitude>
       <longitude>-81.2601278</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="218" name="Base Line &amp; Wortley Rd WB">
     <location>
@@ -1930,7 +1945,10 @@
       <latitude>42.9594903</latitude>
       <longitude>-81.2861809</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2195" name="Berkshire &amp; Berkshire Place NB">
     <location>
@@ -1951,7 +1969,10 @@
       <latitude>42.9607967</latitude>
       <longitude>-81.2828585</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="244" name="Berkshire &amp; Springbank NB">
     <location>
@@ -1965,7 +1986,10 @@
       <latitude>42.9596333</latitude>
       <longitude>-81.2838132</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2196" name="Berkshire &amp; Berkshire Place SB">
     <location>
@@ -1986,14 +2010,20 @@
       <latitude>42.9625716</latitude>
       <longitude>-81.2843701</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="243" name="Berkshire &amp; Robin Rd SB">
     <location>
       <latitude>42.9611828</latitude>
       <longitude>-81.2830031</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="245" name="Berkshire &amp; Springbank SB">
     <location>
@@ -2007,21 +2037,30 @@
       <latitude>42.9596586</latitude>
       <longitude>-81.2838368</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2197" name="Berkshire &amp; Berkshire Crt WB">
     <location>
       <latitude>42.9596988</latitude>
       <longitude>-81.2882851</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="249" name="Berkshire &amp; Westmorland WB">
     <location>
       <latitude>42.9595511</latitude>
       <longitude>-81.286067</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="251" name="Bessemer &amp; Bessemer Crt 1 NB">
     <location>
@@ -2163,49 +2202,70 @@
       <latitude>43.0128019</latitude>
       <longitude>-81.3150242</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="262" name="Blackacres &amp; Edgehill Road S Leg WB">
     <location>
       <latitude>43.0123319</latitude>
       <longitude>-81.3120701</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="265" name="Blackacres &amp; Homestead WB">
     <location>
       <latitude>43.0092006</latitude>
       <longitude>-81.3088978</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="269" name="Blackacres &amp; Winding Way WB">
     <location>
       <latitude>43.0123485</latitude>
       <longitude>-81.3194288</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="271" name="Blackacres &amp; Windingwoods WB">
     <location>
       <latitude>43.0124766</latitude>
       <longitude>-81.316858</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="267" name="Blackacres &amp; Wonderland WB">
     <location>
       <latitude>43.0099236</latitude>
       <longitude>-81.3063751</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="273" name="Blackacres &amp; Yardley Woods WB">
     <location>
       <latitude>43.0108837</latitude>
       <longitude>-81.3113222</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="256" name="Blackwater &amp; Adelaide St NS EB">
     <location>
@@ -2275,28 +2335,43 @@
       <latitude>42.9536535</latitude>
       <longitude>-81.3312513</longitude>
     </location>
-    <routes>05, 08, 17</routes>
+	<routes>
+	  <route>05</route>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="276" name="Boler &amp; Commissioners NS NB">
     <location>
       <latitude>42.9594249</latitude>
       <longitude>-81.3321261</longitude>
     </location>
-    <routes>05, 08, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="277" name="Boler &amp; Commissioners FS NB">
     <location>
       <latitude>42.9600724</latitude>
       <longitude>-81.3326825</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="278" name="Boler &amp; Glenrose NB">
     <location>
       <latitude>42.9567345</latitude>
       <longitude>-81.3320251</longitude>
     </location>
-    <routes>05, 08, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="279" name="Boler &amp; Griffith NB">
     <location>
@@ -2510,7 +2585,10 @@
       <latitude>42.9347504</latitude>
       <longitude>-81.2216882</longitude>
     </location>
-    <routes>13, 14</routes>
+	<routes>
+	  <route>13</route>
+	  <route>14</route>
+	</routes>
   </stop>
   <stop number="2204" name="Bradley &amp; Pond Mills WB">
     <location>
@@ -2684,28 +2762,40 @@
       <latitude>42.9525377</latitude>
       <longitude>-81.3374695</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="315" name="Byron Baseline &amp; Brock St. EB">
     <location>
       <latitude>42.9527391</latitude>
       <longitude>-81.3353696</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="316" name="Byron Baseline &amp; Byron Blvd EB">
     <location>
       <latitude>42.9529293</latitude>
       <longitude>-81.3330216</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="318" name="Byron Baseline &amp; Griffith EB">
     <location>
       <latitude>42.9763201</latitude>
       <longitude>-81.3181899</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="317" name="Byron Baseline &amp; Colville Blvd WB">
     <location>
@@ -3746,7 +3836,10 @@
       <latitude>42.9591532</latitude>
       <longitude>-81.2149003</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2462" name="Commissioners &amp; Beachwood NS EB">
     <location>
@@ -3780,7 +3873,10 @@
       <latitude>42.9623241</latitude>
       <longitude>-81.1944593</longitude>
     </location>
-    <routes>14, 16</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="2465" name="Commissioners &amp; Forest Edge EB">
     <location>
@@ -3796,14 +3892,20 @@
       <latitude>42.9603118</latitude>
       <longitude>-81.20809</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="456" name="Commissioners &amp; Gordon EB">
     <location>
       <latitude>42.9565827</latitude>
       <longitude>-81.2645044</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2535" name="Commissioners &amp; Grandview EB">
     <location>
@@ -3828,21 +3930,30 @@
       <latitude>42.9564563</latitude>
       <longitude>-81.2669516</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="462" name="Commissioners &amp; King Edward Ave EB">
     <location>
       <latitude>42.9607617</latitude>
       <longitude>-81.2054524</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="464" name="Commissioners &amp; Leathorne EB">
     <location>
       <latitude>42.9595973</latitude>
       <longitude>-81.212585</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="466" name="Commissioners &amp; Lynden Cr EB">
     <location>
@@ -3858,14 +3969,20 @@
       <latitude>42.9639266</latitude>
       <longitude>-81.1811931</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2215" name="Commissioners &amp; Meadowlilly Rd EB">
     <location>
       <latitude>42.9635073</latitude>
       <longitude>-81.1850799</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="470" name="Commissioners &amp; Nashua Ave EB">
     <location>
@@ -3908,14 +4025,21 @@
       <latitude>42.9613225</latitude>
       <longitude>-81.201406</longitude>
     </location>
-    <routes>16, 24</routes>
+	<routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="477" name="Commissioners &amp; Pondmills FS EB">
     <location>
       <latitude>42.9619413</latitude>
       <longitude>-81.1974767</longitude>
     </location>
-    <routes>14, 16, 24</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="479" name="Commissioners &amp; Springbank Prk EB">
     <location>
@@ -3940,7 +4064,10 @@
       <latitude>42.9563791</latitude>
       <longitude>-81.2687611</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route> 
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2217" name="Commissioners &amp; Western Counties EB">
     <location>
@@ -4010,7 +4137,10 @@
       <latitude>42.9595166</latitude>
       <longitude>-81.2144171</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2463" name="Commissioners &amp; Beachwood FS 2 WB">
     <location>
@@ -4062,21 +4192,31 @@
       <latitude>42.9621906</latitude>
       <longitude>-81.1969001</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="450" name="Commissioners &amp; Deveron WB Fire Hall">
     <location>
       <latitude>42.9623366</latitude>
       <longitude>-81.1959873</longitude>
     </location>
-    <routes>01, 14</routes>
+    <routes>
+	  <route>01</route>
+	  <route>14</route>
+	</routes>
   </stop>
   <stop number="453" name="Commissioners &amp; Deveron WB Food Basics">
     <location>
       <latitude>42.9626146</latitude>
       <longitude>-81.1936521</longitude>
     </location>
-    <routes>14, 16, 24</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2464" name="Commissioners &amp; Forest Edge WB">
     <location>
@@ -4092,14 +4232,20 @@
       <latitude>42.9603308</latitude>
       <longitude>-81.2091878</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="457" name="Commissioners &amp; Gordon Ave WB">
     <location>
       <latitude>42.956814</latitude>
       <longitude>-81.2638111</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="458" name="Commissioners &amp; Halls Mills Rd NS WB">
     <location>
@@ -4115,28 +4261,42 @@
       <latitude>42.9613991</latitude>
       <longitude>-81.3376362</longitude>
     </location>
-    <routes>05, 08, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="461" name="Commissioners &amp; Huxley WB">
     <location>
       <latitude>42.9566504</latitude>
       <longitude>-81.267432</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="463" name="Commissioners &amp; King Edward WB">
     <location>
       <latitude>42.9608423</latitude>
       <longitude>-81.2059281</longitude>
     </location>
-    <routes>01, 16, 24</routes>
+    <routes>
+	  <route>01</route>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="465" name="Commissioners &amp; Leathorne WB">
     <location>
       <latitude>42.95983</latitude>
       <longitude>-81.2124508</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="467" name="Commissioners &amp; Lynden Cr 1 WB">
     <location>
@@ -4161,14 +4321,20 @@
       <latitude>42.9568937</latitude>
       <longitude>-81.2619131</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2216" name="Commissioners &amp; Meadowlilly Rd WB">
     <location>
       <latitude>42.9635983</latitude>
       <longitude>-81.1862344</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="472" name="Commissioners &amp; North St. WB">
     <location>
@@ -4184,14 +4350,22 @@
       <latitude>42.9614997</latitude>
       <longitude>-81.2015095</longitude>
     </location>
-    <routes>01, 16, 24</routes>
+    <routes>
+	  <route>01</route>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="476" name="Commissioners &amp; Pondmills NS WB">
     <location>
       <latitude>42.9618188</latitude>
       <longitude>-81.1992159</longitude>
     </location>
-    <routes>01, 16, 24</routes>
+    <routes>
+	  <route>01</route>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="480" name="Commissioners &amp; Springbank WB">
     <location>
@@ -4216,7 +4390,11 @@
       <latitude>42.9620341</latitude>
       <longitude>-81.3396324</longitude>
     </location>
-    <routes>05, 08, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="2466" name="Commissioners &amp; Topping Lane FS WB">
     <location>
@@ -4403,28 +4581,40 @@
       <latitude>42.9388598</latitude>
       <longitude>-81.2913356</longitude>
     </location>
-    <routes>15, 23</routes>
+	<routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="502" name="Dalhousie &amp; Dalhousie Cr EB">
     <location>
       <latitude>42.9393518</latitude>
       <longitude>-81.2884868</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="503" name="Dalhousie &amp; McMaster NS 1 NB">
     <location>
       <latitude>42.9405626</latitude>
       <longitude>-81.2882096</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="504" name="Dalhousie &amp; McMaster NS 2 NB">
     <location>
       <latitude>42.9420925</latitude>
       <longitude>-81.2885924</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2468" name="Darnley &amp; Meadowgate FS EB">
     <location>
@@ -4728,14 +4918,21 @@
       <latitude>42.9885861</latitude>
       <longitude>-81.2321388</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="540" name="Dundas &amp; Ashland Ave EB">
     <location>
       <latitude>42.9953145</latitude>
       <longitude>-81.209085</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="543" name="Dundas &amp; Beatrice St EB">
     <location>
@@ -4760,14 +4957,26 @@
       <latitude>43.0087427</latitude>
       <longitude>-81.1610777</longitude>
     </location>
-    <routes>02, 37</routes>
+    <routes>
+	  <route>02</route>
+	  <route>37</route>
+	</routes>
   </stop>
   <stop number="548" name="Dundas &amp; Clarence St EB">
     <location>
       <latitude>42.9842449</latitude>
       <longitude>-81.247868</longitude>
     </location>
-    <routes>02, 07, 08, 09, 12, 19, 20, 23</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>08</route>
+	  <route>09</route>
+	  <route>12</route>
+	  <route>19</route>
+	  <route>20</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="550" name="Dundas &amp; Clarke Rd EB">
     <location>
@@ -4783,21 +4992,33 @@
       <latitude>42.9863557</latitude>
       <longitude>-81.2399639</longitude>
     </location>
-    <routes>02, 07, 08, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>08</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="555" name="Dundas &amp; Eastwood NS EB">
     <location>
       <latitude>43.0049538</latitude>
       <longitude>-81.1748865</longitude>
     </location>
-    <routes>02, 07, 37</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>37</route>
+	</routes>
   </stop>
   <stop number="557" name="Dundas &amp; Eastwood FS EB">
     <location>
       <latitude>43.0054333</latitude>
       <longitude>-81.1731683</longitude>
     </location>
-    <routes>07, 37</routes>
+    <routes>
+	  <route>07</route>
+	  <route>37</route>
+	</routes>
   </stop>
   <stop number="558" name="Dundas &amp; Edgeworth Ave EB">
     <location>
@@ -4822,14 +5043,20 @@
       <latitude>42.9929353</latitude>
       <longitude>-81.2172459</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="562" name="Dundas &amp; Eleanor St EB">
     <location>
       <latitude>42.9945067</latitude>
       <longitude>-81.2117758</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="566" name="Dundas &amp; First St EB">
     <location>
@@ -4845,14 +5072,20 @@
       <latitude>43.0072348</latitude>
       <longitude>-81.166554</longitude>
     </location>
-    <routes>02, 37</routes>
+    <routes>
+	  <route>02</route>
+	  <route>37</route>
+	</routes>
   </stop>
   <stop number="573" name="Dundas &amp; Hale St NS EB">
     <location>
       <latitude>42.9980578</latitude>
       <longitude>-81.1993374</longitude>
     </location>
-    <routes>02, 22</routes>
+    <routes>
+	  <route>02</route>
+	  <route>22</route>
+	</routes>
   </stop>
   <stop number="571" name="Dundas &amp; Hale St FS EB">
     <location>
@@ -4868,84 +5101,131 @@
       <latitude>42.9901291</latitude>
       <longitude>-81.2269415</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="577" name="Dundas &amp; Highbury  EB">
     <location>
       <latitude>42.9965961</latitude>
       <longitude>-81.2043393</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="583" name="Dundas &amp; Kellogg Lane EB">
     <location>
       <latitude>42.9934476</latitude>
       <longitude>-81.2154463</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="584" name="Dundas &amp; Lyle St EB">
     <location>
       <latitude>42.9893866</latitude>
       <longitude>-81.229835</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="585" name="Dundas &amp; Maitland St EB">
     <location>
       <latitude>42.9872753</latitude>
       <longitude>-81.2370541</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="587" name="Dundas &amp; Manitoba EB">
     <location>
       <latitude>43.001873</latitude>
       <longitude>-81.1858623</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="588" name="Dundas &amp; Nightingale Ave EB">
     <location>
       <latitude>42.9941251</latitude>
       <longitude>-81.213073</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="590" name="Dundas &amp; Oakland Ave EB">
     <location>
       <latitude>42.9960581</latitude>
       <longitude>-81.2063213</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="592" name="Dundas &amp; Ontario St EB">
     <location>
       <latitude>42.9915226</latitude>
       <longitude>-81.2222918</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="594" name="Dundas &amp; Quebec St EB">
     <location>
       <latitude>42.9923872</latitude>
       <longitude>-81.2191489</longitude>
     </location>
-    <routes>02, 07</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	</routes>
   </stop>
   <stop number="596" name="Dundas &amp; Rectory St EB">
     <location>
       <latitude>42.9907559</latitude>
       <longitude>-81.2248363</longitude>
     </location>
-    <routes>02, 07, 20</routes>
+    <routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="598" name="Dundas &amp; Richmond St EB">
     <location>
       <latitude>42.9835916</latitude>
       <longitude>-81.2500751</longitude>
     </location>
-    <routes>02, 07, 08, 09, 12, 19, 20, 23</routes>
+	<routes>
+	  <route>02</route>
+	  <route>07</route>
+	  <route>08</route>
+	  <route>09</route>
+	  <route>12</route>
+	  <route>19</route>
+	  <route>20</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="600" name="Dundas &amp; Ridout St EB">
     <location>
@@ -6220,21 +6500,30 @@
       <latitude>42.9412698</latitude>
       <longitude>-81.2963453</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="716" name="Farnham &amp; Farnham Crt SB">
     <location>
       <latitude>42.9393334</latitude>
       <longitude>-81.2952252</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2577" name="Farnham &amp; McMaster SB">
     <location>
       <latitude>42.9428732</latitude>
       <longitude>-81.2952345</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="717" name="Farrah &amp; Proudfoot Lane EB">
     <location>
@@ -6538,14 +6827,20 @@
       <latitude>43.0056158</latitude>
       <longitude>-81.3082085</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="756" name="Gainsborough &amp; Wonderland Rd EB">
     <location>
       <latitude>43.0062254</latitude>
       <longitude>-81.3060974</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2343" name="Gainsborough &amp; Wonderland Rd FS 2 WB">
     <location>
@@ -6561,63 +6856,90 @@
       <latitude>43.006698</latitude>
       <longitude>-81.3049673</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="762" name="Gardenwood &amp; Ridgewood Cr W Leg EB">
     <location>
       <latitude>42.9665473</latitude>
       <longitude>-81.2836385</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="759" name="Gardenwood &amp; Berkshire Dr NB">
     <location>
       <latitude>42.9629077</latitude>
       <longitude>-81.2848623</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="765" name="Gardenwood &amp; Southcrest Dr FS 1 NB">
     <location>
       <latitude>42.9641801</latitude>
       <longitude>-81.2847785</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="767" name="Gardenwood &amp; Southcrest Dr FS 2 NB">
     <location>
       <latitude>42.9649821</latitude>
       <longitude>-81.2851333</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="760" name="Gardenwood &amp; Berkshire Dr SB">
     <location>
       <latitude>42.9632963</latitude>
       <longitude>-81.2849093</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="766" name="Gardenwood &amp; Southcrest Dr SB">
     <location>
       <latitude>42.9648721</latitude>
       <longitude>-81.285158</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="763" name="Gardenwood &amp; Ridgewood Cr W Leg 2 WB">
     <location>
       <latitude>42.9671438</latitude>
       <longitude>-81.2825866</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="764" name="Gardenwood &amp; Ridgewood Cr W leg 4 WB">
     <location>
       <latitude>42.9659889</latitude>
       <longitude>-81.2849102</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="768" name="Glasgow &amp; Mornington Ave NB">
     <location>
@@ -6768,28 +7090,40 @@
       <latitude>42.9694946</latitude>
       <longitude>-81.2759459</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="798" name="Greenwood &amp; Springbank Dr NB">
     <location>
       <latitude>42.9710089</latitude>
       <longitude>-81.2773078</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="797" name="Greenwood &amp; Ridgewood Cres SB">
     <location>
       <latitude>42.9696986</latitude>
       <longitude>-81.2762365</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="799" name="Greenwood &amp; Springbank Dr SB">
     <location>
       <latitude>42.9709424</latitude>
       <longitude>-81.277403</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="800" name="Grenfell &amp; Adelaide St WB">
     <location>
@@ -6913,7 +7247,10 @@
       <latitude>42.9625813</latitude>
       <longitude>-81.3427488</longitude>
     </location>
-    <routes>05, 17</routes>
+	<routes>
+	  <route>05</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="812" name="Griffith &amp; Dearborn Ave NE Leg SB">
     <location>
@@ -6947,14 +7284,20 @@
       <latitude>42.9598506</latitude>
       <longitude>-81.3421295</longitude>
     </location>
-    <routes>05, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="817" name="Griffith &amp; Norman Ave SB">
     <location>
       <latitude>42.9562988</latitude>
       <longitude>-81.3411898</longitude>
     </location>
-    <routes>05, 17</routes>
+    <routes>
+	  <route>05</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="822" name="Griffith &amp; Widdicomb Cr SB">
     <location>
@@ -7123,14 +7466,20 @@
       <latitude>42.9607008</latitude>
       <longitude>-81.3348381</longitude>
     </location>
-    <routes>08, 17</routes>
+	<routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="844" name="Halls Mills &amp; Halls Mills Pl SB">
     <location>
       <latitude>42.9614531</latitude>
       <longitude>-81.3340336</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="845" name="Hamilton &amp; Adelaide St EB">
     <location>
@@ -8214,7 +8563,10 @@
       <latitude>42.9794634</latitude>
       <longitude>-81.2453343</longitude>
     </location>
-    <routes>03, 26</routes>
+    <routes>
+	  <route>03</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="2240" name="Horton &amp; Colborne St EB">
     <location>
@@ -8239,7 +8591,10 @@
       <latitude>42.9791725</latitude>
       <longitude>-81.2463601</longitude>
     </location>
-    <routes>03, 26</routes>
+    <routes>
+	  <route>03</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="970" name="Horton &amp; Ridout St EB">
     <location>
@@ -8287,7 +8642,10 @@
       <latitude>42.9765693</latitude>
       <longitude>-81.2649386</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="979" name="Horton &amp; Wharncliffe Rd FS EB">
     <location>
@@ -8371,14 +8729,20 @@
       <latitude>42.9766701</latitude>
       <longitude>-81.2652731</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="980" name="Horton &amp; Wharncliffe Rd FS 1 WB">
     <location>
       <latitude>42.9768186</latitude>
       <longitude>-81.263014</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="984" name="Horton &amp; Wortley Rd WB">
     <location>
@@ -9524,21 +9888,30 @@
       <latitude>42.9995433</latitude>
       <longitude>-81.3045628</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2248" name="Lawson &amp; Blue Forest EB">
     <location>
       <latitude>43.0004172</latitude>
       <longitude>-81.3018908</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1109" name="Lawson &amp; Denlaw Rd EB">
     <location>
       <latitude>42.9978743</latitude>
       <longitude>-81.3065126</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1113" name="Lawson &amp; Longbow Rd EB">
     <location>
@@ -9572,21 +9945,30 @@
       <latitude>42.9996342</latitude>
       <longitude>-81.3045292</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2249" name="Lawson &amp; Blue Forest Rd WB">
     <location>
       <latitude>43.0004383</latitude>
       <longitude>-81.3020436</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1110" name="Lawson &amp; Limberlost Rd WB">
     <location>
       <latitude>42.9978898</latitude>
       <longitude>-81.3065963</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1112" name="Lawson &amp; Lonsdale WB">
     <location>
@@ -9638,70 +10020,100 @@
       <latitude>42.9999729</latitude>
       <longitude>-81.3083711</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1118" name="Limberlost &amp; Ardsley Rd NS 2 NB">
     <location>
       <latitude>43.0016856</latitude>
       <longitude>-81.3092743</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1122" name="Limberlost &amp; Fairfax Ct NB">
     <location>
       <latitude>43.0034973</latitude>
       <longitude>-81.3089257</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1124" name="Limberlost &amp; Gainsborough Rd NB">
     <location>
       <latitude>43.0050373</latitude>
       <longitude>-81.3093992</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1126" name="Limberlost &amp; Lawson Rd NB">
     <location>
       <latitude>42.998431</latitude>
       <longitude>-81.3075612</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1121" name="Limberlost &amp; Ardsley Rd FS SB">
     <location>
       <latitude>42.9999163</latitude>
       <longitude>-81.3084418</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1119" name="Limberlost &amp; Ardsley Rd NS SB">
     <location>
       <latitude>43.0023663</latitude>
       <longitude>-81.3092536</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1123" name="Limberlost &amp; Fairfax Crt SB">
     <location>
       <latitude>43.0038898</latitude>
       <longitude>-81.3089793</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1125" name="Limberlost &amp; Gainsborough Rd SB">
     <location>
       <latitude>43.0049115</latitude>
       <longitude>-81.309452</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1127" name="Limberlost &amp; Lawson Rd SB">
     <location>
       <latitude>42.9985051</latitude>
       <longitude>-81.307685</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="1131" name="MacKay &amp; Emery St. SB">
     <location>
@@ -9903,7 +10315,10 @@
       <latitude>42.9427697</latitude>
       <longitude>-81.2876259</longitude>
     </location>
-    <routes>15, 23</routes>
+    <routes>
+	  <route>15</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1156" name="McNay &amp; Huron St NB">
     <location>
@@ -10000,7 +10415,10 @@
       <latitude>42.9630838</latitude>
       <longitude>-81.1802225</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2482" name="Meadowgate &amp; Dormer FS SB">
     <location>
@@ -11787,42 +12205,60 @@
       <latitude>42.9904986</latitude>
       <longitude>-81.2720744</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="1393" name="Platts Lane &amp; Trott Dr NB">
     <location>
       <latitude>42.995535</latitude>
       <longitude>-81.2746963</longitude>
     </location>
-    <routes>09, 33</routes>
+	<routes>
+	  <route>09</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="1390" name="Platts Lane &amp; Cherryhill Pl SB">
     <location>
       <latitude>42.9913837</latitude>
       <longitude>-81.2726768</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="1392" name="Platts Lane &amp; Oxford St SB">
     <location>
       <latitude>42.990316</latitude>
       <longitude>-81.2720411</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="1394" name="Platts Lane &amp; Trott Dr SB">
     <location>
       <latitude>42.9950085</latitude>
       <longitude>-81.2745943</longitude>
     </location>
-    <routes>09, 33</routes>
+    <routes>
+	  <route>09</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="1400" name="Pond Mills &amp; Banbury Rd NB">
     <location>
       <latitude>42.9567848</latitude>
       <longitude>-81.1994108</longitude>
     </location>
-    <routes>14, 16</routes>
+	<routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="2261" name="Pond Mills &amp; Bradley Ave NB">
     <location>
@@ -11874,7 +12310,10 @@
       <latitude>42.9554044</latitude>
       <longitude>-81.1989386</longitude>
     </location>
-    <routes>14, 16</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="1412" name="Pond Mills &amp; Thompson St  NB">
     <location>
@@ -11899,14 +12338,20 @@
       <latitude>42.9530628</latitude>
       <longitude>-81.1964756</longitude>
     </location>
-    <routes>14, 16</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="1417" name="Pond Mills &amp; NCL Millridge Rd NB">
     <location>
       <latitude>42.9513713</latitude>
       <longitude>-81.1964033</longitude>
     </location>
-    <routes>14, 16</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="1419" name="Pond Mills &amp; Oldham Cres N Leg NB">
     <location>
@@ -11922,7 +12367,10 @@
       <latitude>42.9493013</latitude>
       <longitude>-81.1953211</longitude>
     </location>
-    <routes>14, 16</routes>
+    <routes>
+	  <route>14</route>
+	  <route>16</route>
+	</routes>
   </stop>
   <stop number="1421" name="Pond Mills &amp; Scenic Dr NB">
     <location>
@@ -12343,7 +12791,10 @@
       <latitude>42.9620153</latitude>
       <longitude>-81.176893</longitude>
     </location>
-    <routes>16, 24</routes>
+    <routes>
+	  <route>16</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1456" name="Regent &amp; William St EB">
     <location>
@@ -12894,49 +13345,70 @@
       <latitude>42.9673295</latitude>
       <longitude>-81.2820365</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1526" name="Ridgewood &amp; Beachwood Ave EB">
     <location>
       <latitude>42.9680595</latitude>
       <longitude>-81.2782556</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1528" name="Ridgewood &amp; Greenwood Ave EB">
     <location>
       <latitude>42.9682664</latitude>
       <longitude>-81.2760562</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2320" name="Ridgewood &amp; Kernohan Parkway EB">
     <location>
       <latitude>42.9678096</latitude>
       <longitude>-81.2809731</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1527" name="Ridgewood &amp; Beachwood Ave WB">
     <location>
       <latitude>42.9681106</latitude>
       <longitude>-81.2783522</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1529" name="Ridgewood &amp; Greenwood Ave WB">
     <location>
       <latitude>42.9683006</latitude>
       <longitude>-81.2761505</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2272" name="Ridgewood &amp; Kernohan Pkwy WB">
     <location>
       <latitude>42.9678747</latitude>
       <longitude>-81.280991</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1531" name="Ridout &amp; Baker St NB">
     <location>
@@ -13256,14 +13728,20 @@
       <latitude>42.9629339</latitude>
       <longitude>-81.3184879</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="1583" name="Riverside &amp; Hartson Rd W Leg EB">
     <location>
       <latitude>42.9629893</latitude>
       <longitude>-81.3260311</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="1585" name="Riverside &amp; Hyde Park Rd EB">
     <location>
@@ -13293,14 +13771,20 @@
       <latitude>42.9636459</latitude>
       <longitude>-81.3292654</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="1562" name="Riverside &amp; St. Anthony Rd EB">
     <location>
       <latitude>42.9624026</latitude>
       <longitude>-81.3233628</longitude>
     </location>
-    <routes>08, 17</routes>
+    <routes>
+	  <route>08</route>
+	  <route>17</route>
+	</routes>
   </stop>
   <stop number="1594" name="Riverside &amp; Sunninghill EB">
     <location>
@@ -14134,7 +14618,10 @@
       <latitude>42.9444328</latitude>
       <longitude>-81.2140303</longitude>
     </location>
-    <routes>13, 14</routes>
+    <routes>
+	  <route>13</route>
+	  <route>14</route>
+	</routes>
   </stop>
   <stop number="1668" name="Southdale &amp; Andover Dr.  EB">
     <location>
@@ -14653,7 +15140,10 @@
       <latitude>42.9732331</latitude>
       <longitude>-81.2732055</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1737" name="Springbank &amp; Greenwood Ave EB">
     <location>
@@ -14714,7 +15204,10 @@
       <latitude>42.9750161</latitude>
       <longitude>-81.2700787</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1750" name="Springbank &amp; Westmount Dr NS 1 EB">
     <location>
@@ -14773,7 +15266,10 @@
       <latitude>42.9754647</latitude>
       <longitude>-81.2699786</longitude>
     </location>
-    <routes>05, 23</routes>
+    <routes>
+	  <route>05</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1739" name="Springbank &amp; Hillcrest Dr WB">
     <location>
@@ -14921,28 +15417,40 @@
       <latitude>42.9596163</latitude>
       <longitude>-81.2880383</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1767" name="Teeple &amp; Old Wonderland Rd EB">
     <location>
       <latitude>42.9594055</latitude>
       <longitude>-81.2911063</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1766" name="Teeple &amp; Melcrest Rd. WB">
     <location>
       <latitude>42.9595933</latitude>
       <longitude>-81.2901759</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1768" name="Teeple &amp; Old Wonderland Rd WB">
     <location>
       <latitude>42.9593326</latitude>
       <longitude>-81.2925153</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="1769" name="Third &amp; Culver Dr NB">
     <location>
@@ -15825,63 +16333,94 @@
       <latitude>42.9477876</latitude>
       <longitude>-81.274572</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1871" name="Viscount &amp; Andover Dr FS 2 EB">
     <location>
       <latitude>42.9480396</latitude>
       <longitude>-81.2732846</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2288" name="Viscount &amp; Notre Dame Dr. EB">
     <location>
       <latitude>42.9484041</latitude>
       <longitude>-81.2710946</longitude>
     </location>
-    <routes>12, 24</routes>
+	<routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1881" name="Viscount &amp; Piedmount Cres. EB">
     <location>
       <latitude>42.9472821</latitude>
       <longitude>-81.2778357</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1883" name="Viscount &amp; Pine Valley Dr EB">
     <location>
       <latitude>42.9475526</latitude>
       <longitude>-81.2808766</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1884" name="Viscount &amp; Steeplechase Dr EB">
     <location>
       <latitude>42.9475279</latitude>
       <longitude>-81.283968</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1889" name="Viscount &amp; Wonderland Rd NS 1 EB">
     <location>
       <latitude>42.9466656</latitude>
       <longitude>-81.2917509</longitude>
     </location>
-    <routes>10, 15, 23, 24</routes>
+    <routes>
+	  <route>10</route>
+	  <route>15</route>
+	  <route>23</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1893" name="Viscount &amp; Wonderland Rd NS 2 EB">
     <location>
       <latitude>42.946911</latitude>
       <longitude>-81.2898946</longitude>
     </location>
-    <routes>10, 15, 23, 24</routes>
+    <routes>
+	  <route>10</route>
+	  <route>15</route>
+	  <route>23</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1891" name="Viscount &amp; Wonderland Rd FS EB">
     <location>
       <latitude>42.9471733</latitude>
       <longitude>-81.2880211</longitude>
     </location>
-    <routes>15, 24</routes>
+	<routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1878" name="Viscount &amp; Galloway Cr NS NB">
     <location>
@@ -15897,21 +16436,30 @@
       <latitude>42.9514603</latitude>
       <longitude>-81.2680145</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1885" name="Viscount &amp; Tavistock Rd NB">
     <location>
       <latitude>42.9537161</latitude>
       <longitude>-81.2682777</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1872" name="Viscount &amp; Commissioners Rd. W SB">
     <location>
       <latitude>42.9558161</latitude>
       <longitude>-81.269168</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1877" name="Viscount &amp; Galloway Cr SB">
     <location>
@@ -15927,14 +16475,20 @@
       <latitude>42.9520784</latitude>
       <longitude>-81.2680598</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1886" name="Viscount &amp; Tavistock Rd 1 SB">
     <location>
       <latitude>42.9532403</latitude>
       <longitude>-81.2682808</longitude>
     </location>
-    <routes>12, 24</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="2285" name="Viscount &amp; Andover Dr NS 2 WB">
     <location>
@@ -15977,14 +16531,20 @@
       <latitude>42.9475825</latitude>
       <longitude>-81.2840051</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1879" name="Viscount &amp; Gardenvale Cr WB">
     <location>
       <latitude>42.9476307</latitude>
       <longitude>-81.2809064</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1880" name="Viscount &amp; Notre Dame WB">
     <location>
@@ -16000,7 +16560,10 @@
       <latitude>42.9473502</latitude>
       <longitude>-81.2780683</longitude>
     </location>
-    <routes>15, 24</routes>
+    <routes>
+	  <route>15</route>
+	  <route>24</route>
+	</routes>
   </stop>
   <stop number="1888" name="Viscount &amp; Village Green Ave WB">
     <location>
@@ -16025,7 +16588,10 @@
       <latitude>42.9991613</latitude>
       <longitude>-81.1706845</longitude>
     </location>
-    <routes>07, 35</routes>
+	<routes>
+	  <route>07</route>
+	  <route>35</route>
+	</routes>
   </stop>
   <stop number="1900" name="Wavell &amp; Clarke Rd NS EB">
     <location>
@@ -16041,7 +16607,10 @@
       <latitude>42.9988539</latitude>
       <longitude>-81.1718406</longitude>
     </location>
-    <routes>07, 35</routes>
+    <routes>
+	  <route>07</route>
+	  <route>35</route>
+	</routes>
   </stop>
   <stop number="1907" name="Wavell &amp; Edmonton St EB">
     <location>
@@ -16237,7 +16806,10 @@
       <latitude>42.9337284</latitude>
       <longitude>-81.2230391</longitude>
     </location>
-    <routes>13, 14</routes>
+    <routes>
+	  <route>13</route>
+	  <route>14</route>
+	</routes>
   </stop>
   <stop number="1926" name="Wellington &amp; Bradley Ave FS NB">
     <location>
@@ -16289,7 +16861,10 @@
       <latitude>42.9298468</latitude>
       <longitude>-81.2197123</longitude>
     </location>
-    <routes>13, 30</routes>
+	<routes>
+	  <route>13</route>
+	  <route>30</route>
+	</routes>
   </stop>
   <stop number="1936" name="Wellington &amp; Dufferin St NB">
     <location>
@@ -16305,28 +16880,40 @@
       <latitude>42.9844866</latitude>
       <longitude>-81.2448836</longitude>
     </location>
-    <routes>03, 26</routes>
+    <routes>
+	  <route>03</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="1937" name="Wellington &amp; Dundas St FS NB">
     <location>
       <latitude>42.98529</latitude>
       <longitude>-81.2453961</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1940" name="Wellington &amp; Exeter Rd NB">
     <location>
       <latitude>42.9268293</latitude>
       <longitude>-81.2177856</longitude>
     </location>
-    <routes>13, 30</routes>
+    <routes>
+	  <route>13</route>
+	  <route>30</route>
+	</routes>
   </stop>
   <stop number="1942" name="Wellington &amp; Grand Ave NB">
     <location>
       <latitude>42.9723932</latitude>
       <longitude>-81.2380857</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1944" name="Wellington &amp; Grey St NB">
     <location>
@@ -16351,21 +16938,30 @@
       <latitude>42.9799702</latitude>
       <longitude>-81.2426228</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1947" name="Wellington &amp; Horton St FS NB">
     <location>
       <latitude>42.9804903</latitude>
       <longitude>-81.242866</longitude>
     </location>
-    <routes>03, 26</routes>
+	<routes>
+	  <route>03</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="1950" name="Wellington &amp; McClary Ave NB">
     <location>
       <latitude>42.970589</latitude>
       <longitude>-81.2366863</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1952" name="Wellington &amp; Montgomery Gate NB">
     <location>
@@ -16381,7 +16977,10 @@
       <latitude>42.9860761</latitude>
       <longitude>-81.2457981</longitude>
     </location>
-    <routes>01, 03</routes>
+	<routes>
+	  <route>01</route>
+	  <route>03</route>
+	</routes>
   </stop>
   <stop number="1961" name="Wellington &amp; Raywood Ave NB">
     <location>
@@ -16406,7 +17005,10 @@
       <latitude>42.9788676</latitude>
       <longitude>-81.2421081</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1968" name="Wellington &amp; South St NB">
     <location>
@@ -16467,7 +17069,12 @@
       <latitude>42.9829168</latitude>
       <longitude>-81.2441061</longitude>
     </location>
-    <routes>01, 03, 13, 26</routes>
+	<routes>
+	  <route>01</route>
+	  <route>03</route>
+	  <route>13</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="1924" name="Wellington &amp; Baseline Rd SB">
     <location>
@@ -16483,14 +17090,20 @@
       <latitude>42.933922</latitude>
       <longitude>-81.2234676</longitude>
     </location>
-    <routes>13, 14</routes>
+    <routes>
+	  <route>13</route>
+	  <route>14</route>
+	</routes>
   </stop>
   <stop number="1930" name="Wellington &amp; Colgrove Pl SB">
     <location>
       <latitude>42.970156</latitude>
       <longitude>-81.2364985</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1933" name="Wellington &amp; Commissioners Rd FS SB">
     <location>
@@ -16531,21 +17144,30 @@
       <latitude>42.9721188</latitude>
       <longitude>-81.2380599</longitude>
     </location>
-    <routes>01, 13</routes>
+	<routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1945" name="Wellington &amp; Grey St SB">
     <location>
       <latitude>42.9773779</latitude>
       <longitude>-81.2416418</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1948" name="Wellington &amp; Horton St SB">
     <location>
       <latitude>42.9798076</latitude>
       <longitude>-81.2428952</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1953" name="Wellington &amp; Montgomery Gate FS SB">
     <location>
@@ -16615,14 +17237,20 @@
       <latitude>42.9790968</latitude>
       <longitude>-81.2425408</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1969" name="Wellington &amp; South St SB">
     <location>
       <latitude>42.9751728</latitude>
       <longitude>-81.2405607</longitude>
     </location>
-    <routes>01, 13</routes>
+    <routes>
+	  <route>01</route>
+	  <route>13</route>
+	</routes>
   </stop>
   <stop number="1964" name="Wellington &amp; Southdale Rd SB">
     <location>
@@ -16724,7 +17352,11 @@
       <latitude>43.0001346</latitude>
       <longitude>-81.2761779</longitude>
     </location>
-    <routes>02, 09, 33</routes>
+	<routes>
+	  <route>02</route>
+	  <route>09</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="2291" name="Western &amp; Phillip Aziz FS NB">
     <location>
@@ -16788,14 +17420,22 @@
       <latitude>42.9991406</latitude>
       <longitude>-81.2763786</longitude>
     </location>
-    <routes>02, 09, 33</routes>
+    <routes>
+	  <route>02</route>
+	  <route>09</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="2003" name="Western &amp; Sarnia Rd FS 1 SB">
     <location>
       <latitude>43.0011935</latitude>
       <longitude>-81.2765288</longitude>
     </location>
-    <routes>02, 09, 33</routes>
+    <routes>
+	  <route>02</route>
+	  <route>09</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="2005" name="Western &amp; Sarnia Rd NS SB">
     <location>
@@ -16854,7 +17494,11 @@
       <latitude>42.947277</latitude>
       <longitude>-81.2925519</longitude>
     </location>
-    <routes>15, 23, 28</routes>
+	<routes>
+	  <route>15</route>
+	  <route>23</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2438" name="Westmount Mall Stop 6">
     <location>
@@ -17002,7 +17646,11 @@
       <latitude>42.9579513</latitude>
       <longitude>-81.2606987</longitude>
     </location>
-    <routes>12, 24, 26</routes>
+    <routes>
+	  <route>12</route>
+	  <route>24</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="2029" name="Wharncliffe &amp; Devonshire Ave NB">
     <location>
@@ -17174,7 +17822,11 @@
       <latitude>42.9575992</latitude>
       <longitude>-81.2608022</longitude>
     </location>
-    <routes>12, 24, 26</routes>
+	<routes>
+	  <route>12</route>
+	  <route>24</route>
+	  <route>26</route>
+	</routes>
   </stop>
   <stop number="2028" name="Wharncliffe &amp; Cove Rd SB">
     <location>
@@ -17604,14 +18256,20 @@
       <latitude>42.9534401</latitude>
       <longitude>-81.2903588</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2102" name="Wonderland &amp; Commissioners Rd FS NB">
     <location>
       <latitude>42.9558372</latitude>
       <longitude>-81.2909767</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2103" name="Wonderland &amp; Farrah Rd FS 1 NB">
     <location>
@@ -17636,7 +18294,10 @@
       <latitude>43.0073678</latitude>
       <longitude>-81.3043378</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2108" name="Wonderland &amp; Kingsway Ave NB">
     <location>
@@ -17652,14 +18313,22 @@
       <latitude>42.9429128</latitude>
       <longitude>-81.2853263</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2111" name="Wonderland &amp; McMaster Dr FS NB">
     <location>
       <latitude>42.9439545</latitude>
       <longitude>-81.2877213</longitude>
     </location>
-    <routes>10, 15, 23, 28</routes>
+	<routes>
+	  <route>10</route>
+	  <route>15</route>
+	  <route>23</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2117" name="Wonderland &amp; Oxford St NS NB">
     <location>
@@ -17675,21 +18344,30 @@
       <latitude>42.9841803</latitude>
       <longitude>-81.2926939</longitude>
     </location>
-    <routes>10, 33</routes>
+	<routes>
+	  <route>10</route>
+	  <route>33</route>
+	</routes>
   </stop>
   <stop number="2119" name="Wonderland &amp; Pine Valley Gate NB">
     <location>
       <latitude>42.9424624</latitude>
       <longitude>-81.2834258</longitude>
     </location>
-    <routes>10, 28</routes>
+	<routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2122" name="Wonderland &amp; Riverside Dr NB">
     <location>
       <latitude>42.9767913</latitude>
       <longitude>-81.2897754</longitude>
     </location>
-    <routes>10, 19</routes>
+    <routes>
+	  <route>10</route>
+	  <route>19</route>
+	</routes>
   </stop>
   <stop number="2126" name="Wonderland &amp; Sarnia Rd NS NB">
     <location>
@@ -17705,14 +18383,20 @@
       <latitude>42.997275</latitude>
       <longitude>-81.2995246</longitude>
     </location>
-    <routes>09, 31</routes>
+	<routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2128" name="Wonderland &amp; Southdale Rd NB">
     <location>
       <latitude>42.9395943</latitude>
       <longitude>-81.2813971</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2132" name="Wonderland &amp; Springbank Dr NB">
     <location>
@@ -17728,28 +18412,40 @@
       <latitude>42.9590451</latitude>
       <longitude>-81.2933151</longitude>
     </location>
-    <routes>10, 23</routes>
+	<routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2135" name="Wonderland &amp; Village Green Ave NB">
     <location>
       <latitude>42.9507402</latitude>
       <longitude>-81.2897157</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2137" name="Wonderland &amp; Viscount Rd FS 1 NB">
     <location>
       <latitude>42.9475246</latitude>
       <longitude>-81.288924</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2139" name="Wonderland &amp; Viscount Rd FS 2 NB">
     <location>
       <latitude>42.9489464</latitude>
       <longitude>-81.289303</longitude>
     </location>
-    <routes>10, 23</routes>
+    <routes>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2528" name="Wonderland at Wharncliffe NB">
     <location>
@@ -17801,7 +18497,11 @@
       <latitude>42.953736</latitude>
       <longitude>-81.2906813</longitude>
     </location>
-    <routes>11, 10, 23</routes>
+    <routes>
+	  <route>11</route>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2104" name="Wonderland &amp; Farrah Rd NS 2 SB">
     <location>
@@ -17835,14 +18535,20 @@
       <latitude>42.9429868</latitude>
       <longitude>-81.2865003</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2114" name="Wonderland &amp; McMaster Dr NS SB">
     <location>
       <latitude>42.9444869</latitude>
       <longitude>-81.2883973</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2118" name="Wonderland &amp; Oxford St FS SB">
     <location>
@@ -17867,14 +18573,20 @@
       <latitude>42.9423273</latitude>
       <longitude>-81.283654</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2121" name="Wonderland &amp; Pine Valley Lane SB">
     <location>
       <latitude>42.9412174</latitude>
       <longitude>-81.2821505</longitude>
     </location>
-    <routes>10, 28</routes>
+    <routes>
+	  <route>10</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2123" name="Wonderland &amp; Riverside Dr SB">
     <location>
@@ -17908,14 +18620,20 @@
       <latitude>42.9970121</latitude>
       <longitude>-81.2996481</longitude>
     </location>
-    <routes>09, 31</routes>
+    <routes>
+	  <route>09</route>
+	  <route>31</route>
+	</routes>
   </stop>
   <stop number="2129" name="Wonderland &amp; Southdale Rd SB">
     <location>
       <latitude>42.9373657</latitude>
       <longitude>-81.2811659</longitude>
     </location>
-    <routes>12, 28</routes>
+	<routes>
+	  <route>12</route>
+	  <route>28</route>
+	</routes>
   </stop>
   <stop number="2133" name="Wonderland &amp; Springbank Dr SB">
     <location>
@@ -17931,21 +18649,33 @@
       <latitude>42.9514631</latitude>
       <longitude>-81.2901151</longitude>
     </location>
-    <routes>10, 11, 23</routes>
+    <routes>
+	  <route>11</route>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2305" name="Wonderland &amp; Viscount Rd NS 2 SB">
     <location>
       <latitude>42.9478049</latitude>
       <longitude>-81.2892802</longitude>
     </location>
-    <routes>11, 10, 23</routes>
+    <routes>
+	  <route>11</route>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2138" name="Wonderland &amp; Viscount Rd NS 1 SB">
     <location>
       <latitude>42.9489158</latitude>
       <longitude>-81.2895634</longitude>
     </location>
-    <routes>11, 10, 23</routes>
+    <routes>
+	  <route>11</route>
+	  <route>10</route>
+	  <route>23</route>
+	</routes>
   </stop>
   <stop number="2289" name="Westmount Library EB">
     <location>
@@ -17970,49 +18700,70 @@
       <latitude>42.9882552</latitude>
       <longitude>-81.2705268</longitude>
     </location>
-    <routes>09, 20</routes>
+	<routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2142" name="Woodward &amp; Edinburgh St NB">
     <location>
       <latitude>42.9868358</latitude>
       <longitude>-81.2697911</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2144" name="Woodward &amp; Riverside Dr NB">
     <location>
       <latitude>42.9835068</latitude>
       <longitude>-81.2694836</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2145" name="Woodward &amp; Tozer Ave NB">
     <location>
       <latitude>42.9848116</latitude>
       <longitude>-81.2695591</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2141" name="Woodward &amp; Cambridge St SB">
     <location>
       <latitude>42.9883266</latitude>
       <longitude>-81.2706487</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2143" name="Woodward &amp; Edinburgh St SB">
     <location>
       <latitude>42.9872036</latitude>
       <longitude>-81.270064</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2146" name="Woodward &amp; Tozer Ave SB">
     <location>
       <latitude>42.9848035</latitude>
       <longitude>-81.2696273</longitude>
     </location>
-    <routes>09, 20</routes>
+    <routes>
+	  <route>09</route>
+	  <route>20</route>
+	</routes>
   </stop>
   <stop number="2151" name="Wychwood &amp; Sleightholme Ave EB">
     <location>
