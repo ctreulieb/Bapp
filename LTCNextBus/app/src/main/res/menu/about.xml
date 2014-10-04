@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.ltcnextbus.ct.ltcnextbus.about" >
+    tools:context="com.ltcnextbus.ct.ltcnextbus.About" >
     <item android:id="@+id/main"
         android:title="@string/title_activity_main"
         android:orderInCategory="100"

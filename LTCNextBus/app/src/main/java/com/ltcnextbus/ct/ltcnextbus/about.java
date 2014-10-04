@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class about extends Activity {
+public class About extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +27,11 @@ public class about extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.main: {
-                Intent myIntent = new Intent(about.this, LTCNextBusMain.class);
+                Intent myIntent = new Intent(About.this, LTCNextBusMain.class);
                 startActivity(myIntent);
             }
             case R.id.favorites: {
-                Intent myIntent = new Intent(about.this, Favourites.class);
+                Intent myIntent = new Intent(About.this, Favourites.class);
                 startActivity(myIntent);
             }
             default:

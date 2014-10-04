@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Source: 			www.london.ca/d.aspx?s=/Open_Data/default.htm
-	 Date Accessed: 	March 19, 2013 -->
 <?xml-stylesheet type="text/xsl" href="BusStops.xslt"?>
 <allstops>
   <stop number="2504" name="Main &amp; Bainard EB">
@@ -479,7 +477,7 @@
       <latitude>42.9775027</latitude>
       <longitude>-81.2267919</longitude>
     </location>
-    <<routes>
+    <routes>
 	  <route>16</route>
 	</routes>
   </stop>

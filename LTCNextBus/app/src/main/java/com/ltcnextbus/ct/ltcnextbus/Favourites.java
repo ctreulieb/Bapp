@@ -41,7 +41,7 @@ public class Favourites extends Activity implements OnClickListener {
                 startActivity(myIntent);
             }
             case R.id.about: {
-                Intent myIntent = new Intent(Favourites.this, about.class);
+                Intent myIntent = new Intent(Favourites.this, About.class);
                 startActivity(myIntent);
             }
             default:

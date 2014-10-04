@@ -49,7 +49,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 startActivity(myIntent);
             }
             case R.id.about: {
-                Intent myIntent = new Intent(LTCNextBusMain.this, about.class);
+                Intent myIntent = new Intent(LTCNextBusMain.this, About.class);
                 startActivity(myIntent);
             }
             default:
