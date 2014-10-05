@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListAdapter;
 import android.widget.*;
-import java.util.ArrayList;
 import android.view.View.OnClickListener;
 
-public class LTCNextBusMain extends Activity {
+public class LTCNextBusMain extends Activity implements OnClickListener {
 
 
     private ListView listView;
@@ -30,19 +28,8 @@ public class LTCNextBusMain extends Activity {
 
         listView.setAdapter(adapter);
 
-        favButton = (Button) findViewById(R.id.button2);
-
-        OnClickListener onClickListener = new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(LTCNextBusMain.this, Favourites.class);
-                startActivity(myIntent);
-            }
-        };
-        favButton.setOnClickListener(onClickListener);
-
-        //Intent myIntent = new Intent(this, AvitivityName.class);
-       // startActivity(myIntent);
+        ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
+        ((Button)findViewById(R.id.buttonGetNextBusses)).setOnClickListener(this);
     }
 
 
@@ -55,13 +42,28 @@ public class LTCNextBusMain extends Activity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+
+        switch (item.getItemId()) {
+            case R.id.favorites:{
+                Intent myIntent = new Intent(LTCNextBusMain.this, Favourites.class);
+                startActivity(myIntent);
+            }
+            case R.id.about: {
+                Intent myIntent = new Intent(LTCNextBusMain.this, About.class);
+                startActivity(myIntent);
+            }
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch(view.getId()) {
+            case R.id.buttonAddToFav :
+            case R.id.buttonGetNextBusses :
+            default:
+                return;
+        }
     }
 }

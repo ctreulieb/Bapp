@@ -26,13 +26,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Enter a Stop ID:"
+                android:text="@string/enterStopID"
                 android:id="@+id/textView" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText" />
+                android:id="@+id/editTextStopNumber" />
 
         </LinearLayout>
 
@@ -44,14 +44,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get Next Busses"
-                android:id="@+id/button" />
+                android:text="@string/getNextBusses"
+                android:id="@+id/buttonGetNextBusses" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add to Favourites"
-                android:id="@+id/button2" />
+                android:text="@string/addToFavourites"
+                android:id="@+id/buttonAddToFav" />
         </LinearLayout>
 
         <LinearLayout

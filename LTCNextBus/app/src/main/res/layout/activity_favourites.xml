@@ -33,14 +33,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Get Next Busses"
-                android:id="@+id/button3" />
+                android:text="@string/getNextBusses"
+                android:id="@+id/buttonGetNextBusses"
+                android:singleLine="true" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Remove Stop"
-                android:id="@+id/button4" />
+                android:text="@string/removeStop"
+                android:id="@+id/buttonRemoveStop" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
