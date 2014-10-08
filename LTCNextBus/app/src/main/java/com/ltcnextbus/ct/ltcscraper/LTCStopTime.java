@@ -7,7 +7,7 @@ import android.text.format.Time;
  */
 public class LTCStopTime {
     private int routeID;
-    private String routeName;
+    private String destination;
     private Time time;
 
     public int getRouteID() {
@@ -18,12 +18,12 @@ public class LTCStopTime {
         this.routeID = routeID;
     }
 
-    public String getRouteName() {
-        return routeName;
+    public String getDestination() {
+        return destination;
     }
 
-    public void setRouteName(String routeName) {
-        this.routeName = routeName;
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
     public Time getTime() {
