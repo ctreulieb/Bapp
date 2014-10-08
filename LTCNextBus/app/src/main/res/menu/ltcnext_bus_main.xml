@@ -1,6 +1,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".LTCNextBusMain" >
+    <item android:id="@+id/main"
+        android:title="@string/title_activity_main"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
     <item android:id="@+id/favorites"
         android:title="@string/title_activity_favourites"
         android:orderInCategory="100"

@@ -19,7 +19,7 @@ public class About extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.about, menu);
+        getMenuInflater().inflate(R.menu.ltcnext_bus_main, menu);
         return true;
     }
 
@@ -29,10 +29,12 @@ public class About extends Activity {
             case R.id.main: {
                 Intent myIntent = new Intent(About.this, LTCNextBusMain.class);
                 startActivity(myIntent);
+                return true;
             }
             case R.id.favorites: {
                 Intent myIntent = new Intent(About.this, Favourites.class);
                 startActivity(myIntent);
+                return true;
             }
             default:
                 return super.onOptionsItemSelected(item);

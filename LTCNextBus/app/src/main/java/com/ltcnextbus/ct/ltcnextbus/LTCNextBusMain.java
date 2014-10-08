@@ -25,6 +25,12 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltcnext_bus_main);
 
+        Bundle b = getIntent().getExtras();
+        if(null != b) {
+            int stopID = b.getInt("stopID");
+            //TODO auto populate with this stop id
+        }
+
         listView = (ListView) findViewById(R.id.listView);
 
         String[] values = new String[] { "#17 5:50", "#4a 6:00", "#17 6:20", "#4a 6:30", "#17 6:50", "#4a 7:00", "#17 7:20", "#4a 7:30",  "#17 7:50", "#4a 8:00", };
@@ -49,13 +55,15 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.favorites:{
+            case R.id.favorites: {
                 Intent myIntent = new Intent(LTCNextBusMain.this, Favourites.class);
                 startActivity(myIntent);
+                return true;
             }
             case R.id.about: {
                 Intent myIntent = new Intent(LTCNextBusMain.this, About.class);
                 startActivity(myIntent);
+                return true;
             }
             default:
                 return super.onOptionsItemSelected(item);

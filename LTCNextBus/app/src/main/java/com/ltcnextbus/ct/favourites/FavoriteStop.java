@@ -6,14 +6,19 @@ import java.io.Serializable;
  * Created by Tyler on 04/10/2014.
  */
 public class FavoriteStop implements Serializable {
-    private String stopID;
+    private int stopID;
     private String name;
 
-    public String getStopID() {
+    public FavoriteStop(int id, String name) {
+        this.stopID = id;
+        this.name = name;
+    }
+
+    public int getStopID() {
         return stopID;
     }
 
-    public void setStopID(String stopID) {
+    public void setStopID(int stopID) {
         this.stopID = stopID;
     }
 
