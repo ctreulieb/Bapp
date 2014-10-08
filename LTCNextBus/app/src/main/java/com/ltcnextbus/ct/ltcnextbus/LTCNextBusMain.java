@@ -9,6 +9,11 @@ import android.view.View;
 import android.widget.*;
 import android.view.View.OnClickListener;
 
+import com.ltcnextbus.ct.ltcscraper.LTCScraper;
+import com.ltcnextbus.ct.ltcscraper.LTCStopTime;
+
+import java.util.ArrayList;
+
 public class LTCNextBusMain extends Activity implements OnClickListener {
 
 
