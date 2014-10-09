@@ -163,6 +163,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                                 bp += 5;
                                 stopTimes.add(st);
                             }
+                            break;
                         }
                     }
                 }
