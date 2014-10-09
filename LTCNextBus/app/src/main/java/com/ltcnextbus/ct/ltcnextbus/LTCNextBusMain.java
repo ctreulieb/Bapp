@@ -40,7 +40,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         listView.setAdapter(adapter);
 
         ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
-        ((Button)findViewById(R.id.buttonGetNextBusses)).setOnClickListener(this);
+        //((Button)findViewById(R.id.buttonGetNextBusses)).setOnClickListener(this);
     }
 
 
@@ -78,5 +78,9 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             default:
                 return;
         }
+    }
+
+    public void getNextBusesClick(View view) {
+        ArrayList<LTCStopTime> stopTimes = LTCScraper.getTimesForStop(39,this);
     }
 }

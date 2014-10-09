@@ -1,17 +1,20 @@
 package com.ltcnextbus.ct.ltcscraper;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.res.XmlResourceParser;
+import android.os.AsyncTask;
 
 import com.ltcnextbus.ct.ltcnextbus.R;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -39,12 +42,23 @@ public class LTCScraper {
                 }
                 eventType = stops.next();
             }
+            for(int i : routes){
+                for(int d = 1; d <5; ++d) {
+                    //Document doc = Jsoup.connect("http://ltconline.ca/WebWatch/ada.aspx?r="+i+"&d="+d+"&s="+stopID).get();
+                    Document doc = Jsoup.connect("http://ltconline.ca/WebWatch/ada.aspx?r="+ i +"&d="+ d +"&s=" + stopID).get();
+                    Elements stopResults = doc.select("#tblADA TR");
+                    if(stopResults.size() > 1)
+                    {
+
+                    }
+                }
+            }
+
         }catch (XmlPullParserException e) {
             System.out.println("XMLPullParserException - " + e.getMessage());
         }catch (IOException e) {
             System.out.println("IOException - " + e.getMessage());
         }
-        int bp = 000;
 
         return stopTimes;
     }

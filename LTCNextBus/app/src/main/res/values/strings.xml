@@ -18,7 +18,7 @@
     <string name="addToFavourites">Add To Favourites</string>
     <string name="removeStop">Remove Stop</string>
     <string name="title_activity_about">About</string>
-    <string name="aboutAuther">Authers : Tyler Garrow, Craig truileb</string>
+    <string name="aboutAuthor">Authors : Tyler Garrow, Craig Treulieb</string>
     <string name="aboutYear">Year : 2014</string>
 
 </resources>
