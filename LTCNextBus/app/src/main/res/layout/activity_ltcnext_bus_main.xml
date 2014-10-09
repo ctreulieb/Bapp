@@ -45,8 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/getNextBuses"
-                android:id="@+id/buttonGetNextBuses"
-                android:onClick="getNextBusesClick" />
+                android:id="@+id/buttonGetNextBuses" />
 
             <Button
                 android:layout_width="wrap_content"

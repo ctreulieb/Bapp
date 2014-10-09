@@ -51,7 +51,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         listView.setAdapter(adapter);
 
         ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
-        //((Button)findViewById(R.id.buttonGetNextBusses)).setOnClickListener(this);
+        ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
     }
 
 
@@ -85,16 +85,13 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.buttonAddToFav :
+                break;
             case R.id.buttonGetNextBuses :
+                new scrapeAsync(2504).execute();
+                break;
             default:
                 return;
         }
-    }
-
-    public void getNextBusesClick(View view) {
-        //TODO: ENSURE INPUT IS INTEGER
-        new scrapeAsync(39).execute();
-
     }
 
     private class scrapeAsync extends AsyncTask<Void, Void, Void> {
