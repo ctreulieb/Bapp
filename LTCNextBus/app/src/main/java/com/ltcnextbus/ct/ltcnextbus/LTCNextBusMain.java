@@ -39,7 +39,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         Bundle b = getIntent().getExtras();
         if(null != b) {
             int stopID = b.getInt("stopID");
-            //TODO auto populate with this stop id
+            new scrapeAsync(stopID).execute();
         }
 
         listView = (ListView) findViewById(R.id.listView);
