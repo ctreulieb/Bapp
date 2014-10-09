@@ -1,4 +1,4 @@
-package com.ltcnextbus.ct.ltcscraper;
+package com.ltcnextbus.ct.ltcstoptime;
 
 import android.text.format.Time;
 

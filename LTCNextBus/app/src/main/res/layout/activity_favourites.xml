@@ -33,8 +33,8 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/getNextBusses"
-                android:id="@+id/buttonGetNextBusses"
+                android:text="@string/getNextBuses"
+                android:id="@+id/buttonGetNextBuses"
                 android:singleLine="true" />
 
             <Button

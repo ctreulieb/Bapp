@@ -2,6 +2,8 @@ package com.ltcnextbus.ct.ltcnextbus;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.XmlResourceParser;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,10 +11,17 @@ import android.view.View;
 import android.widget.*;
 import android.view.View.OnClickListener;
 
-import com.ltcnextbus.ct.ltcscraper.LTCScraper;
-import com.ltcnextbus.ct.ltcscraper.LTCStopTime;
+import com.ltcnextbus.ct.ltcstoptime.LTCStopTime;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class LTCNextBusMain extends Activity implements OnClickListener {
 
@@ -74,13 +83,70 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.buttonAddToFav :
-            case R.id.buttonGetNextBusses :
+            case R.id.buttonGetNextBuses :
             default:
                 return;
         }
     }
 
     public void getNextBusesClick(View view) {
-        ArrayList<LTCStopTime> stopTimes = LTCScraper.getTimesForStop(39,this);
+        new scrapeAsync(39).execute();
+
+    }
+
+    private class scrapeAsync extends AsyncTask<Void, Void, Void> {
+        private List<Integer> routes;
+        private int stopID;
+        ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
+
+        public scrapeAsync(int stopID)
+        {
+            this.stopID = stopID;
+            XmlResourceParser stops = getApplicationContext().getResources().getXml(R.xml.ltcstops);
+            routes = new ArrayList<Integer>();
+            try {
+                stops.next();
+                int eventType = stops.getEventType();
+                while(eventType != XmlPullParser.END_DOCUMENT) {
+                    if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("stop") && stops.getAttributeIntValue(null, "number", 0) == stopID){
+                        //found <stop> now need to find all the routes
+                        //go until you find <routes> start tag then until it isn't routes end tag if it's
+                        while(!(eventType == XmlPullParser.END_TAG && stops.getName().equalsIgnoreCase("routes"))) {
+                            if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("route")) {
+                                routes.add(Integer.parseInt(stops.nextText()));
+                            }
+                            eventType = stops.next();
+                        }
+                        break;
+                    }
+                    eventType = stops.next();
+                }
+
+            }catch (XmlPullParserException e) {
+                System.out.println("XMLPullParserException - " + e.getMessage());
+            }catch (IOException e) {
+                System.out.println("IOException - " + e.getMessage());
+            }
+        }
+
+
+        @Override
+        protected Void doInBackground(Void... params) {
+            try{
+                for(int i : routes){
+                    for(int d = 1; d <5; ++d) {
+                        Document doc = Jsoup.connect("http://ltconline.ca/WebWatch/ada.aspx?r=" + i + "&d=" + d + "&s=" + stopID).get();
+                        Elements stopResults = doc.select("#tblADA TR");
+                        if(stopResults.size() > 1)
+                        {
+                            //get stop info
+                        }
+                    }
+                }
+            }catch (IOException e) {
+                System.out.println("IOException - " + e.getMessage());
+            }
+            return null;
+        }
     }
 }

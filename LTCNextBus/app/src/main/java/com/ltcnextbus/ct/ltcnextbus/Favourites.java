@@ -30,7 +30,7 @@ public class Favourites extends Activity implements OnClickListener {
         setContentView(R.layout.activity_favourites);
 
 
-        ((Button)findViewById(R.id.buttonGetNextBusses)).setOnClickListener(this);
+        ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonRemoveStop)).setOnClickListener(this);
 
 
@@ -77,7 +77,7 @@ public class Favourites extends Activity implements OnClickListener {
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
-            case R.id.buttonGetNextBusses :
+            case R.id.buttonGetNextBuses :
                 if(favStops.size() != 0) {
                     Intent i = new Intent(Favourites.this, LTCNextBusMain.class);
                     i.putExtra("stopID", favStops.get(selectedFavIndex).getStopID());

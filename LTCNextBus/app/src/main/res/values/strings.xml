@@ -13,7 +13,7 @@
     </string-array>
 
     <string name="main">Main</string>
-    <string name="getNextBusses">Get Next Busses</string>
+    <string name="getNextBuses">Get Next Buses</string>
     <string name="enterStopID">Enter a Stop ID:</string>
     <string name="addToFavourites">Add To Favourites</string>
     <string name="removeStop">Remove Stop</string>
