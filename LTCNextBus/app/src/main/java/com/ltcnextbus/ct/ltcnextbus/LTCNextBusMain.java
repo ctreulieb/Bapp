@@ -10,11 +10,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import android.view.View.OnClickListener;
+import android.text.format.Time;
 
 import com.ltcnextbus.ct.ltcstoptime.LTCStopTime;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -90,6 +92,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     }
 
     public void getNextBusesClick(View view) {
+        //TODO: ENSURE INPUT IS INTEGER
         new scrapeAsync(39).execute();
 
     }
@@ -98,6 +101,9 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         private List<Integer> routes;
         private int stopID;
         ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
+        //TODO: HANDLE IF THE STOP ID DOES NOT EXIST
+        //TODO: INFORM THE USER IT IS GETTING STOP TIMES ETC. "onProgressUpdate"?
+        //TODO: HANDLE NO MORE STOP TIMES
 
         public scrapeAsync(int stopID)
         {
@@ -137,9 +143,26 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                     for(int d = 1; d <5; ++d) {
                         Document doc = Jsoup.connect("http://ltconline.ca/WebWatch/ada.aspx?r=" + i + "&d=" + d + "&s=" + stopID).get();
                         Elements stopResults = doc.select("#tblADA TR");
-                        if(stopResults.size() > 1)
+                        if(stopResults.size()> 1)
                         {
-                            //get stop info
+                            stopResults.remove(stopResults.size()-1);
+                            stopResults.remove(0);
+                            for(Element s : stopResults){
+                                String time = s.child(0).text();
+                                int hr = Integer.parseInt(time.substring(1, time.indexOf(":")));
+                                int mn = Integer.parseInt(time.substring(time.indexOf(":")+1, time.lastIndexOf(" ")));
+                                if(time.indexOf("P") > 0)
+                                    hr += 12;
+                                LTCStopTime st = new LTCStopTime();
+                                st.setDestination(s.child(1).text());
+                                st.setRouteID(i);
+                                Time t = new Time();
+                                t.set(0,mn,hr,0,0,0);
+                                st.setTime(t);
+                                int bp =0;
+                                bp += 5;
+                                stopTimes.add(st);
+                            }
                         }
                     }
                 }
