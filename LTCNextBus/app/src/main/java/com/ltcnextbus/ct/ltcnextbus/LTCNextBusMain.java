@@ -41,25 +41,22 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltcnext_bus_main);
 
+        listView = (ListView) findViewById(R.id.listView);
+        ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
+        ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
+        stopIDEditText = (EditText)findViewById(R.id.editTextStopNumber);
+
         Bundle b = getIntent().getExtras();
         if(null != b) {
             int stopID = b.getInt("stopID");
             new scrapeAsync(stopID).execute();
         }
-
-        listView = (ListView) findViewById(R.id.listView);
-
-        String[] values = new String[] { "#17 5:50", "#4a 6:00", "#17 6:20", "#4a 6:30", "#17 6:50", "#4a 7:00", "#17 7:20", "#4a 7:30",  "#17 7:50", "#4a 8:00", };
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
-
-        listView.setAdapter(adapter);
-
-        ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
-        ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
-        stopIDEditText = (EditText)findViewById(R.id.editTextStopNumber);
     }
 
+    private void setListView(String[] values) {
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, values);
+        listView.setAdapter(adapter);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -101,7 +98,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         }
     }
 
-    private class scrapeAsync extends AsyncTask<Void, Void, Void> {
+    private class scrapeAsync extends AsyncTask<Void, Void,  ArrayList<LTCStopTime>> {
         private List<Integer> routes;
         private int stopID;
         ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
@@ -142,7 +139,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
 
         @Override
-        protected Void doInBackground(Void... params) {
+        protected  ArrayList<LTCStopTime> doInBackground(Void... params) {
             try{
                 for(int i : routes){
                     for(int d = 1; d <5; ++d) {
@@ -175,9 +172,22 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             }catch (IOException e) {
                 System.out.println("IOException - " + e.getMessage());
             }
-            return null;
+            return stopTimes;
         }
+
+        @Override protected void onPostExecute(ArrayList<LTCStopTime> result) {
+              String[] values = new String[result.size()];
+              for(int i = 0; i < result.size(); ++i) {
+                  values[i] = "" + result.get(i).getTime().toString() + " " + result.get(i).getRouteID() + " " + result.get(i).getDestination();
+              }
+              setListView(values);
+         }
     }
+
+    private void displayNotValidInputToast() {
+        Toast.makeText(getApplicationContext(),"Invalid Input",Toast.LENGTH_SHORT).show();
+    }
+
     private boolean isStop(int stopID) {
         XmlResourceParser stops = getApplicationContext().getResources().getXml(R.xml.ltcstops);
         try {
@@ -216,6 +226,15 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         return stopName;
     }
 
+    private boolean tryParseInt(String value) {
+        try {
+            Integer.parseInt(value);
+            return true;
+        }catch(NumberFormatException nfe) {
+            return false;
+        }
+    }
+
     private void buildAndExecFavAlert() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Add To Favourites");
@@ -226,9 +245,17 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         if(stopIDEditText.getText().toString().equals("")) {
             return;
         } else {
-            stopNumber =  Integer.parseInt(stopIDEditText.getText().toString());
-            if(isStop(stopNumber)) {
-                stopName =  getStopName(stopNumber);
+            if(tryParseInt(stopIDEditText.getText().toString())) {
+                stopNumber =  Integer.parseInt(stopIDEditText.getText().toString());
+                if(isStop(stopNumber)) {
+                    stopName =  getStopName(stopNumber);
+                } else {
+                    Toast.makeText(getApplicationContext(),"Not A Stop Number",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            } else {
+                displayNotValidInputToast();
+                return;
             }
         }
 
@@ -248,7 +275,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
                 for(int iFavs = 0; iFavs < favStops.size(); ++iFavs) {
                     if(favStops.get(iFavs).getStopID() == stopNumber) {
-                        //TODO Handle id already in favs
+                        Toast.makeText(getApplicationContext(),"Stop Number Already A Favourite",Toast.LENGTH_SHORT).show();
                         return;
                     }
                 }
@@ -265,4 +292,6 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
         alert.show();
     }
+
+
 }
