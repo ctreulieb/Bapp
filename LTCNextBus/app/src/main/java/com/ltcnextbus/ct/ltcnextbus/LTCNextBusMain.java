@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -91,7 +92,19 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 buildAndExecFavAlert();
                 break;
             case R.id.buttonGetNextBuses :
-                new scrapeAsync(2504).execute();
+                String value = stopIDEditText.getText().toString();
+                if(tryParseInt(value)) {
+                    int stop = Integer.parseInt(value);
+                    if(isStop(stop)) {
+                        new scrapeAsync(stop).execute();
+                    }else {
+                        Toast.makeText(getApplicationContext(),"Not A Stop Number",Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                } else {
+                    displayNotValidInputToast();
+                    return;
+                }
                 break;
             default:
                 return;
@@ -175,12 +188,15 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             return stopTimes;
         }
 
-        @Override protected void onPostExecute(ArrayList<LTCStopTime> result) {
-              String[] values = new String[result.size()];
-              for(int i = 0; i < result.size(); ++i) {
-                  values[i] = "" + result.get(i).getTime().toString() + " " + result.get(i).getRouteID() + " " + result.get(i).getDestination();
-              }
-              setListView(values);
+        @Override
+        protected void onPostExecute(ArrayList<LTCStopTime> result) {
+            DateFormat df = new DateFormat();
+
+            String[] values = new String[result.size()];
+            for(int i = 0; i < result.size(); ++i) {
+              values[i] = "" + result.get(i).getTime().format("%H:%M") + " " + result.get(i).getRouteID() + " " + result.get(i).getDestination();
+            }
+            setListView(values);
          }
     }
 
