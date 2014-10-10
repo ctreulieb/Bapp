@@ -223,7 +223,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         //TODO add in handles for bad input and not a stop
         String stopName = "";
         final int stopNumber;
-        if("" == stopIDEditText.getText().toString()) {
+        if(stopIDEditText.getText().toString().equals("")) {
             return;
         } else {
             stopNumber =  Integer.parseInt(stopIDEditText.getText().toString());
