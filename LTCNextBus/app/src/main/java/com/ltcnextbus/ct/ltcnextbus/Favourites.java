@@ -35,10 +35,10 @@ public class Favourites extends Activity implements OnClickListener {
 
 
         /*Set up test data*/
-        favStops = new ArrayList<FavoriteStop>();
+        /*favStops = new ArrayList<FavoriteStop>();
         favStops.add(new FavoriteStop(1301,"foo"));
         favStops.add(new FavoriteStop(1303,"boo"));
-        fileManager.saveFavoritesToFile(favStops);
+        fileManager.saveFavoritesToFile(favStops);*/
         /*Set up test data*/
 
 

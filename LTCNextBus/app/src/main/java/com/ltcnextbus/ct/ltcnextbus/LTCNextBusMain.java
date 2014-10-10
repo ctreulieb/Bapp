@@ -1,6 +1,8 @@
 package com.ltcnextbus.ct.ltcnextbus;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.AsyncTask;
@@ -12,6 +14,8 @@ import android.widget.*;
 import android.view.View.OnClickListener;
 import android.text.format.Time;
 
+import com.ltcnextbus.ct.favourites.FavoriteFileManager;
+import com.ltcnextbus.ct.favourites.FavoriteStop;
 import com.ltcnextbus.ct.ltcstoptime.LTCStopTime;
 
 import org.jsoup.Jsoup;
@@ -27,9 +31,10 @@ import java.util.List;
 
 public class LTCNextBusMain extends Activity implements OnClickListener {
 
-
+    private FavoriteFileManager fileManager = new FavoriteFileManager(this);
     private ListView listView;
     private Button favButton;
+    private EditText stopIDEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
         ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
+        stopIDEditText = (EditText)findViewById(R.id.editTextStopNumber);
     }
 
 
@@ -85,6 +91,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.buttonAddToFav :
+                buildAndExecFavAlert();
                 break;
             case R.id.buttonGetNextBuses :
                 new scrapeAsync(2504).execute();
@@ -101,6 +108,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         //TODO: HANDLE IF THE STOP ID DOES NOT EXIST
         //TODO: INFORM THE USER IT IS GETTING STOP TIMES ETC. "onProgressUpdate"?
         //TODO: HANDLE NO MORE STOP TIMES
+        //TODO: Handle NO NETWORK CONNECTION
 
         public scrapeAsync(int stopID)
         {
@@ -169,5 +177,92 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             }
             return null;
         }
+    }
+    private boolean isStop(int stopID) {
+        XmlResourceParser stops = getApplicationContext().getResources().getXml(R.xml.ltcstops);
+        try {
+            stops.next();
+            int eventType = stops.getEventType();
+            while(eventType != XmlPullParser.END_DOCUMENT) {
+                if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("stop") && stops.getAttributeIntValue(null, "number", 0) == stopID)
+                    return true;
+                eventType = stops.next();
+            }
+        }catch (XmlPullParserException e) {
+            System.out.println("XMLPullParserException - " + e.getMessage());
+        }catch (IOException e) {
+            System.out.println("IOException - " + e.getMessage());
+        }
+        return false;
+    }
+
+    private String getStopName(int stopID) {
+        String stopName = "";
+        XmlResourceParser stops = getApplicationContext().getResources().getXml(R.xml.ltcstops);
+        try {
+            stops.next();
+            int eventType = stops.getEventType();
+            while(eventType != XmlPullParser.END_DOCUMENT) {
+                if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("stop") && stops.getAttributeIntValue(null, "number", 0) == stopID) {
+                    return stops.getAttributeValue(null,"name");
+                }
+                eventType = stops.next();
+            }
+        }catch (XmlPullParserException e) {
+            System.out.println("XMLPullParserException - " + e.getMessage());
+        }catch (IOException e) {
+            System.out.println("IOException - " + e.getMessage());
+        }
+        return stopName;
+    }
+
+    private void buildAndExecFavAlert() {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Add To Favourites");
+        alert.setMessage("Give The Stop A Name");
+        //TODO add in handles for bad input and not a stop
+        String stopName = "";
+        final int stopNumber;
+        if("" == stopIDEditText.getText().toString()) {
+            return;
+        } else {
+            stopNumber =  Integer.parseInt(stopIDEditText.getText().toString());
+            if(isStop(stopNumber)) {
+                stopName =  getStopName(stopNumber);
+            }
+        }
+
+        final EditText input = new EditText(this);
+        input.setText(stopName);
+        alert.setView(input);
+
+        alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String value = input.getText().toString();
+                ArrayList<FavoriteStop> favStops;
+                favStops = fileManager.readFromInternalStorage();
+                if(null == favStops) {
+                    favStops = new ArrayList<FavoriteStop>();
+                }
+
+                for(int iFavs = 0; iFavs < favStops.size(); ++iFavs) {
+                    if(favStops.get(iFavs).getStopID() == stopNumber) {
+                        //TODO Handle id already in favs
+                        return;
+                    }
+                }
+                favStops.add(new FavoriteStop(stopNumber, value));
+                fileManager.saveFavoritesToFile(favStops);
+            }
+        });
+
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+
+            }
+        });
+
+        alert.show();
     }
 }
