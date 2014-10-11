@@ -18,6 +18,7 @@ import android.text.format.Time;
 import com.ltcnextbus.ct.favourites.FavoriteFileManager;
 import com.ltcnextbus.ct.favourites.FavoriteStop;
 import com.ltcnextbus.ct.ltcstoptime.LTCStopTime;
+import com.ltcnextbus.ct.ltcstoptime.LTCStopTimeComparator;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,6 +29,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LTCNextBusMain extends Activity implements OnClickListener {
@@ -182,6 +184,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                         }
                     }
                 }
+                Collections.sort(stopTimes, new LTCStopTimeComparator());
             }catch (IOException e) {
                 System.out.println("IOException - " + e.getMessage());
             }
@@ -194,7 +197,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
             String[] values = new String[result.size()];
             for(int i = 0; i < result.size(); ++i) {
-              values[i] = "" + result.get(i).getTime().format("%H:%M") + " " + result.get(i).getRouteID() + " " + result.get(i).getDestination();
+              values[i] = "" + result.get(i).getTime().format("%H:%M") + " - Route #" + result.get(i).getRouteID() + " " + result.get(i).getDestination();
             }
             setListView(values);
          }
