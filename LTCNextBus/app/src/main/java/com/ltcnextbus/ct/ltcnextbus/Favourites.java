@@ -89,6 +89,7 @@ public class Favourites extends Activity implements OnClickListener {
                     favStops.remove(selectedFavIndex);
                     initSpinner();
                     selectedFavIndex = favSpinner.getSelectedItemPosition();
+                    fileManager.saveFavoritesToFile(favStops);
                 }
                 break;
             default:
