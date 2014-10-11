@@ -52,6 +52,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         Bundle b = getIntent().getExtras();
         if(null != b) {
             int stopID = b.getInt("stopID");
+            stopIDEditText.setText("" + stopID);
             new scrapeAsync(stopID).execute();
         }
     }

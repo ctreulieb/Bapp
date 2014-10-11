@@ -33,15 +33,6 @@ public class Favourites extends Activity implements OnClickListener {
         ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonRemoveStop)).setOnClickListener(this);
 
-
-        /*Set up test data*/
-        /*favStops = new ArrayList<FavoriteStop>();
-        favStops.add(new FavoriteStop(1301,"foo"));
-        favStops.add(new FavoriteStop(1303,"boo"));
-        fileManager.saveFavoritesToFile(favStops);*/
-        /*Set up test data*/
-
-
         favStops = fileManager.readFromInternalStorage();
         if(null == favStops) {
             favStops = new ArrayList<FavoriteStop>();
@@ -79,7 +70,6 @@ public class Favourites extends Activity implements OnClickListener {
         switch(view.getId()) {
             case R.id.buttonGetNextBuses :
                 if(favStops.size() != 0) {
-                    //TODO: populate the text box on main activity with stop number of selected favourite?
                     Intent i = new Intent(Favourites.this, LTCNextBusMain.class);
                     i.putExtra("stopID", favStops.get(selectedFavIndex).getStopID());
                     startActivity(i);
