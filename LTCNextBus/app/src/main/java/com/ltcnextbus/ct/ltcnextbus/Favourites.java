@@ -121,6 +121,7 @@ public class Favourites extends Activity implements OnClickListener {
                 selectedFavIndex = 0;
             }
         });
+        selectedFavIndex = favSpinner.getSelectedItemPosition();
     }
 
 }
