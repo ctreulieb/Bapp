@@ -2,6 +2,8 @@ package com.ltcnextbus.ct.ltcnextbus;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
@@ -53,7 +55,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         if(null != b) {
             int stopID = b.getInt("stopID");
             stopIDEditText.setText("" + stopID);
-            new scrapeAsync(stopID).execute();
+            new scrapeAsync(this, stopID).execute();
         }
     }
 
@@ -99,7 +101,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 if(tryParseInt(value)) {
                     int stop = Integer.parseInt(value);
                     if(isStop(stop)) {
-                        new scrapeAsync(stop).execute();
+                        new scrapeAsync(this, stop).execute();
                     }else {
                         Toast.makeText(getApplicationContext(),"Not A Stop Number",Toast.LENGTH_SHORT).show();
                         return;
@@ -118,13 +120,16 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         private List<Integer> routes;
         private int stopID;
         ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
+        private ProgressDialog progress;
+        private Context context;
         //TODO: HANDLE IF THE STOP ID DOES NOT EXIST
         //TODO: INFORM THE USER IT IS GETTING STOP TIMES ETC. "onProgressUpdate"?
         //TODO: HANDLE NO MORE STOP TIMES
         //TODO: Handle NO NETWORK CONNECTION
 
-        public scrapeAsync(int stopID)
+        public scrapeAsync(Context c ,int stopID)
         {
+            this.context = c;
             this.stopID = stopID;
             XmlResourceParser stops = getApplicationContext().getResources().getXml(R.xml.ltcstops);
             routes = new ArrayList<Integer>();
@@ -153,6 +158,14 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             }
         }
 
+        @Override
+        protected void onPreExecute() {
+            progress = new ProgressDialog(context);
+            progress.setTitle("Loading");
+            progress.setMessage("Fetching Stop Times");
+            progress.show();
+            //super.onPreExecute();
+        }
 
         @Override
         protected  ArrayList<LTCStopTime> doInBackground(Void... params) {
@@ -201,6 +214,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
               values[i] = "" + result.get(i).getTime().format("%H:%M") + " - Route #" + result.get(i).getRouteID() + " " + result.get(i).getDestination();
             }
             setListView(values);
+            progress.dismiss();
          }
     }
 
