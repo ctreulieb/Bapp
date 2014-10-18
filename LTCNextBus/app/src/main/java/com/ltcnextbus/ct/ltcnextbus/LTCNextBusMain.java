@@ -129,8 +129,6 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
         private ProgressDialog progress;
         private Context context;
-        //TODO: INFORM THE USER IT IS GETTING STOP TIMES ETC. "onProgressUpdate"?
-
         public scrapeAsync(Context c ,int stopID)
         {
             this.context = c;
@@ -217,7 +215,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 }
             } else{
                 values = new String[1];
-                values[0] = "No more stop times for this stop";
+                values[0] = "No more buses to this stop";
             }
 
             setListView(values);
