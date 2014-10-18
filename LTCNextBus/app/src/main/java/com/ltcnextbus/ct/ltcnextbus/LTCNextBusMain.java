@@ -7,6 +7,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.format.DateFormat;
@@ -101,9 +103,14 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 if(tryParseInt(value)) {
                     int stop = Integer.parseInt(value);
                     if(isStop(stop)) {
-                        new scrapeAsync(this, stop).execute();
+                        if(haveNetworkConnection())
+                            new scrapeAsync(this, stop).execute();
+                        else {
+                            Toast.makeText(getApplicationContext(),"Network connection required to fetch stop times",Toast.LENGTH_LONG).show();
+                            return;
+                        }
                     }else {
-                        Toast.makeText(getApplicationContext(),"Not A Stop Number",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Not a valid stop number",Toast.LENGTH_SHORT).show();
                         return;
                     }
                 } else {
@@ -122,10 +129,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         ArrayList<LTCStopTime> stopTimes = new ArrayList<LTCStopTime>();
         private ProgressDialog progress;
         private Context context;
-        //TODO: HANDLE IF THE STOP ID DOES NOT EXIST
         //TODO: INFORM THE USER IT IS GETTING STOP TIMES ETC. "onProgressUpdate"?
-        //TODO: HANDLE NO MORE STOP TIMES
-        //TODO: Handle NO NETWORK CONNECTION
 
         public scrapeAsync(Context c ,int stopID)
         {
@@ -138,8 +142,6 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                 int eventType = stops.getEventType();
                 while(eventType != XmlPullParser.END_DOCUMENT) {
                     if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("stop") && stops.getAttributeIntValue(null, "number", 0) == stopID){
-                        //found <stop> now need to find all the routes
-                        //go until you find <routes> start tag then until it isn't routes end tag if it's
                         while(!(eventType == XmlPullParser.END_TAG && stops.getName().equalsIgnoreCase("routes"))) {
                             if(eventType == XmlPullParser.START_TAG && stops.getName().equalsIgnoreCase("route")) {
                                 routes.add(Integer.parseInt(stops.nextText()));
@@ -164,7 +166,6 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             progress.setTitle("Loading");
             progress.setMessage("Fetching Stop Times");
             progress.show();
-            //super.onPreExecute();
         }
 
         @Override
@@ -208,11 +209,17 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         @Override
         protected void onPostExecute(ArrayList<LTCStopTime> result) {
             DateFormat df = new DateFormat();
-
-            String[] values = new String[result.size()];
-            for(int i = 0; i < result.size(); ++i) {
-              values[i] = "" + result.get(i).getTime().format("%H:%M") + " - Route #" + result.get(i).getRouteID() + " " + result.get(i).getDestination();
+            String[] values;
+            if(result.size() > 0) {
+                values = new String[result.size()];
+                for(int i = 0; i < result.size(); ++i) {
+                    values[i] = "" + result.get(i).getTime().format("%H:%M") + " - Route #" + result.get(i).getRouteID() + " " + result.get(i).getDestination();
+                }
+            } else{
+                values = new String[1];
+                values[0] = "No more stop times for this stop";
             }
+
             setListView(values);
             progress.dismiss();
          }
@@ -269,11 +276,27 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         }
     }
 
+    private boolean haveNetworkConnection() {
+        boolean haveConnectedWifi = false;
+        boolean haveConnectedMobile = false;
+
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo[] netInfo = cm.getAllNetworkInfo();
+        for (NetworkInfo ni : netInfo) {
+            if (ni.getTypeName().equalsIgnoreCase("WIFI"))
+                if (ni.isConnected())
+                    haveConnectedWifi = true;
+            if (ni.getTypeName().equalsIgnoreCase("MOBILE"))
+                if (ni.isConnected())
+                    haveConnectedMobile = true;
+        }
+        return haveConnectedWifi || haveConnectedMobile;
+    }
+
     private void buildAndExecFavAlert() {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Add To Favourites");
-        alert.setMessage("Give The Stop A Name");
-        //TODO add in handles for bad input and not a stop
+        alert.setMessage("Give this stop a name");
         String stopName = "";
         final int stopNumber;
         if(stopIDEditText.getText().toString().equals("")) {
