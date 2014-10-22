@@ -10,7 +10,11 @@ import android.content.Context;
 import java.io.StreamCorruptedException;
 
 /**
- * Created by Owner on 04/10/2014.
+ * Created by Tyler on 04/10/2014.
+ *
+ * Encapsulation  of the reading and writing of the file that the
+ * favorite stops are saved in
+ *
  */
 public class FavoriteFileManager {
 

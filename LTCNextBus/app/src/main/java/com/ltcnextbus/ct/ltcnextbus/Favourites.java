@@ -17,6 +17,13 @@ import com.ltcnextbus.ct.favourites.FavoriteStop;
 
 import java.util.ArrayList;
 
+/**
+ * Created by Tyler on 04/10/2014.
+ *
+ *  Activity for the Favourites page. Handles all the actions a user can do to a favorite stop
+ */
+
+
 public class Favourites extends Activity implements OnClickListener {
 
     private ArrayList<FavoriteStop> favStops;

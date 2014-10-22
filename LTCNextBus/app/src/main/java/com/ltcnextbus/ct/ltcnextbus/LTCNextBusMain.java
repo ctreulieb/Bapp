@@ -36,6 +36,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/*
+        Author Craig, Tyler
+
+        Main Activity for LTC Next BUs app
+
+        contains a subclass SyncAsync that extends Async to handle page scrapping to get bus times.
+
+* */
+
+
 public class LTCNextBusMain extends Activity implements OnClickListener {
 
     private FavoriteFileManager fileManager = new FavoriteFileManager(this);
@@ -55,9 +65,18 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
 
         Bundle b = getIntent().getExtras();
         if(null != b) {
-            int stopID = b.getInt("stopID");
-            stopIDEditText.setText("" + stopID);
-            new scrapeAsync(this, stopID).execute();
+            int stop = b.getInt("stopID");
+            if(isStop(stop)) {
+                if(haveNetworkConnection())
+                    new scrapeAsync(this, stop).execute();
+                else {
+                    Toast.makeText(getApplicationContext(),"Network connection required to fetch stop times",Toast.LENGTH_LONG).show();
+                    return;
+                }
+            }else {
+                Toast.makeText(getApplicationContext(),"Not a valid stop number",Toast.LENGTH_SHORT).show();
+                return;
+            }
         }
     }
 
