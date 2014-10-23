@@ -35,16 +35,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
-/*
-        Author Craig, Tyler
-
-        Main Activity for LTC Next BUs app
-
-        contains a subclass SyncAsync that extends Async to handle page scrapping to get bus times.
-
-* */
-
+/**
+ * Created by: Craig Treulieb, Tyler Garrow
+ * Main Activity for LTC NextBus app
+ * Contains a subclass SyncAsync that extends Async to handle page scraping to get bus times
+ */
 
 public class LTCNextBusMain extends Activity implements OnClickListener {
 

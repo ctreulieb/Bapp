@@ -4,6 +4,7 @@ import android.text.format.Time;
 
 /**
  * Created by Craig on 07/10/2014.
+ * LTCStopTime Class to contain all relevant information about a single stop time
  */
 public class LTCStopTime {
     private int routeID;

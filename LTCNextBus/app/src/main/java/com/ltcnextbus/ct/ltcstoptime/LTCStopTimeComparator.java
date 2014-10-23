@@ -6,6 +6,7 @@ import java.util.Comparator;
 
 /**
  * Created by Craig on 11/10/2014.
+ * Allows for sorting a list of LTCStopTime objects, sorts them by time
  */
 public class LTCStopTimeComparator implements Comparator<LTCStopTime> {
     @Override
