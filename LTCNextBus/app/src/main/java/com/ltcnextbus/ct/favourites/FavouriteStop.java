@@ -5,11 +5,11 @@ import java.io.Serializable;
 /**
  * Created by Tyler on 04/10/2014.
  */
-public class FavoriteStop implements Serializable {
+public class FavouriteStop implements Serializable {
     private int stopID;
     private String name;
 
-    public FavoriteStop(int id, String name) {
+    public FavouriteStop(int id, String name) {
         this.stopID = id;
         this.name = name;
     }

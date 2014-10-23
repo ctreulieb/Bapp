@@ -13,22 +13,22 @@ import java.io.StreamCorruptedException;
  * Created by Tyler on 04/10/2014.
  *
  * Encapsulation  of the reading and writing of the file that the
- * favorite stops are saved in
+ * favourite stops are saved in
  *
  */
-public class FavoriteFileManager {
+public class FavouriteFileManager {
 
     private FileOutputStream fos;
     private FileInputStream fis;
-    private String FILENAME = "favorite-stops";
+    private String FILENAME = "favourite-stops";
 
     private Context context;
-    public FavoriteFileManager(Context context) {
+    public FavouriteFileManager(Context context) {
         this.context = context;
     }
 
 
-    public void saveFavoritesToFile(ArrayList<FavoriteStop> stops) {
+    public void saveFavouritesToFile(ArrayList<FavouriteStop> stops) {
         try {
             fos = context.openFileOutput(FILENAME, Context.MODE_PRIVATE);
             ObjectOutputStream objectStream = new ObjectOutputStream(fos);
@@ -42,11 +42,11 @@ public class FavoriteFileManager {
     }
 
     @SuppressWarnings("unchecked")
-    public ArrayList<FavoriteStop> readFromInternalStorage() {
+    public ArrayList<FavouriteStop> readFromInternalStorage() {
         try {
             fis = context.openFileInput(FILENAME);
             ObjectInputStream oin = new ObjectInputStream(fis);
-            return (ArrayList<FavoriteStop>)(oin.readObject());
+            return (ArrayList<FavouriteStop>)(oin.readObject());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             return null;

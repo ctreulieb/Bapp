@@ -6,12 +6,6 @@
     <string name="title_activity_favourites">Favourites</string>
     <string name="title_activity_main">Main</string>
 
-    <string-array name="stop_array">
-        <item>860 - Hamilton at Highbury</item>
-        <item>1322 - Oxford at Mornington </item>
-        <item>1939 - Wellington at Dundas</item>
-    </string-array>
-
     <string name="main">Main</string>
     <string name="getNextBuses">Get Next Buses</string>
     <string name="enterStopID">Enter a Stop ID:</string>

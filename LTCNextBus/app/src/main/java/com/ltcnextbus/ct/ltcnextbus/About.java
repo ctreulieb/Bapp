@@ -31,7 +31,7 @@ public class About extends Activity {
                 startActivity(myIntent);
                 return true;
             }
-            case R.id.favorites: {
+            case R.id.favourites: {
                 Intent myIntent = new Intent(About.this, Favourites.class);
                 startActivity(myIntent);
                 return true;

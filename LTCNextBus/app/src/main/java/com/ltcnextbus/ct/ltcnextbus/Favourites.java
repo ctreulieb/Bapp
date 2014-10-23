@@ -12,22 +12,22 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.view.View.OnClickListener;
 
-import com.ltcnextbus.ct.favourites.FavoriteFileManager;
-import com.ltcnextbus.ct.favourites.FavoriteStop;
+import com.ltcnextbus.ct.favourites.FavouriteFileManager;
+import com.ltcnextbus.ct.favourites.FavouriteStop;
 
 import java.util.ArrayList;
 
 /**
  * Created by Tyler on 04/10/2014.
  *
- *  Activity for the Favourites page. Handles all the actions a user can do to a favorite stop
+ *  Activity for the Favourites page. Handles all the actions a user can do to a favourite stop
  */
 
 
 public class Favourites extends Activity implements OnClickListener {
 
-    private ArrayList<FavoriteStop> favStops;
-    private FavoriteFileManager fileManager = new FavoriteFileManager(this);
+    private ArrayList<FavouriteStop> favStops;
+    private FavouriteFileManager fileManager = new FavouriteFileManager(this);
     private int selectedFavIndex = 0;
     private Spinner favSpinner;
 
@@ -42,7 +42,7 @@ public class Favourites extends Activity implements OnClickListener {
 
         favStops = fileManager.readFromInternalStorage();
         if(null == favStops) {
-            favStops = new ArrayList<FavoriteStop>();
+            favStops = new ArrayList<FavouriteStop>();
         }
         initSpinner();
     }
@@ -87,7 +87,7 @@ public class Favourites extends Activity implements OnClickListener {
                     favStops.remove(selectedFavIndex);
                     initSpinner();
                     selectedFavIndex = favSpinner.getSelectedItemPosition();
-                    fileManager.saveFavoritesToFile(favStops);
+                    fileManager.saveFavouritesToFile(favStops);
                 }
                 break;
             default:

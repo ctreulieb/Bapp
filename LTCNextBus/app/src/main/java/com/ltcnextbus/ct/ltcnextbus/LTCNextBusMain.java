@@ -19,8 +19,8 @@ import android.widget.*;
 import android.view.View.OnClickListener;
 import android.text.format.Time;
 
-import com.ltcnextbus.ct.favourites.FavoriteFileManager;
-import com.ltcnextbus.ct.favourites.FavoriteStop;
+import com.ltcnextbus.ct.favourites.FavouriteFileManager;
+import com.ltcnextbus.ct.favourites.FavouriteStop;
 import com.ltcnextbus.ct.ltcstoptime.LTCStopTime;
 import com.ltcnextbus.ct.ltcstoptime.LTCStopTimeComparator;
 
@@ -43,7 +43,7 @@ import java.util.List;
 
 public class LTCNextBusMain extends Activity implements OnClickListener {
 
-    private FavoriteFileManager fileManager = new FavoriteFileManager(this);
+    private FavouriteFileManager fileManager = new FavouriteFileManager(this);
     private ListView listView;
     private Button favButton;
     private EditText stopIDEditText;
@@ -53,7 +53,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltcnext_bus_main);
 
-        listView = (ListView) findViewById(R.id.listView);
+        listView = (ListView) findViewById(R.id.listViewStopTimes);
         ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
         stopIDEditText = (EditText)findViewById(R.id.editTextStopNumber);
@@ -91,7 +91,7 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.favorites: {
+            case R.id.favourites: {
                 Intent myIntent = new Intent(LTCNextBusMain.this, Favourites.class);
                 startActivity(myIntent);
                 return true;
@@ -336,10 +336,10 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 String value = input.getText().toString();
-                ArrayList<FavoriteStop> favStops;
+                ArrayList<FavouriteStop> favStops;
                 favStops = fileManager.readFromInternalStorage();
                 if(null == favStops) {
-                    favStops = new ArrayList<FavoriteStop>();
+                    favStops = new ArrayList<FavouriteStop>();
                 }
 
                 for(int iFavs = 0; iFavs < favStops.size(); ++iFavs) {
@@ -348,8 +348,8 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                         return;
                     }
                 }
-                favStops.add(new FavoriteStop(stopNumber, value));
-                fileManager.saveFavoritesToFile(favStops);
+                favStops.add(new FavouriteStop(stopNumber, value));
+                fileManager.saveFavouritesToFile(favStops);
             }
         });
 

@@ -5,7 +5,7 @@
         android:title="@string/title_activity_main"
         android:orderInCategory="100"
         android:showAsAction="never" />
-    <item android:id="@+id/favorites"
+    <item android:id="@+id/favourites"
         android:title="@string/title_activity_favourites"
         android:orderInCategory="100"
         android:showAsAction="never" />
