@@ -57,7 +57,6 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
         ((Button)findViewById(R.id.buttonAddToFav)).setOnClickListener(this);
         ((Button)findViewById(R.id.buttonGetNextBuses)).setOnClickListener(this);
         stopIDEditText = (EditText)findViewById(R.id.editTextStopNumber);
-
         Bundle b = getIntent().getExtras();
         if(null != b) {
             int stop = b.getInt("stopID");
@@ -69,7 +68,8 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                     return;
                 }
             }else {
-                Toast.makeText(getApplicationContext(),"Not a valid stop number",Toast.LENGTH_SHORT).show();
+                if(stop != 0)
+                    Toast.makeText(getApplicationContext(),"Not a valid stop number",Toast.LENGTH_SHORT).show();
                 return;
             }
         }
