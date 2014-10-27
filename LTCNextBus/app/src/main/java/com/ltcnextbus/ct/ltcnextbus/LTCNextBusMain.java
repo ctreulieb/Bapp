@@ -197,7 +197,8 @@ public class LTCNextBusMain extends Activity implements OnClickListener {
                                 int hr = Integer.parseInt(time.substring(1, time.indexOf(":")));
                                 int mn = Integer.parseInt(time.substring(time.indexOf(":")+1, time.lastIndexOf(" ")));
                                 if(time.indexOf("P") > 0)
-                                    hr += 12;
+                                    if(hr != 12)
+                                        hr += 12;
                                 LTCStopTime st = new LTCStopTime();
                                 st.setDestination(s.child(1).text());
                                 st.setRouteID(i);
